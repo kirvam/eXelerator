@@ -1,0 +1,10 @@
+
+NOTES:
+
+[phaigh@sparkplug cs_billing]$ perl par_file_EXCEL_TEST_.pl CapReport_2019-06-01_12-16-00__.csv HASHTST1 >0601hash.out
+
+test regex 
+perl research_file.pl REGEX 7414639_Detail_2019_4.csv > 0601.out
+
+simple regex test
+
