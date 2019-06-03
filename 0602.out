@@ -1,0 +1,900 @@
+0: $line: ﻿"Usage Data Extract"
+
+0: $z: ﻿"Usage Data Extract"
+
+[0]: ﻿"Usage Data Extract"
+
+1: $line: ""
+
+1: $z: ""
+
+[0]: ""
+
+2: $line: "AccountOwnerId","Account Name","ServiceAdministratorId","SubscriptionId","SubscriptionGuid","Subscription Name","Date","Month","Day","Year","Product","Meter ID","Meter Category","Meter Sub-Category","Meter Region","Meter Name","Consumed Quantity","ResourceRate","ExtendedCost","Resource Location","Consumed Service","Instance ID","ServiceInfo1","ServiceInfo2","AdditionalInfo","Tags","Store Service Identifier","Department Name","Cost Center","Unit Of Measure","Resource Group","Charges Billed Separately"
+
+2: $z: "AccountOwnerId","Account Name","ServiceAdministratorId","SubscriptionId","SubscriptionGuid","Subscription Name","Date","Month","Day","Year","Product","Meter ID","Meter Category","Meter Sub-Category","Meter Region","Meter Name","Consumed Quantity","ResourceRate","ExtendedCost","Resource Location","Consumed Service","Instance ID","ServiceInfo1","ServiceInfo2","AdditionalInfo","Tags","Store Service Identifier","Department Name","Cost Center","Unit Of Measure","Resource Group","Charges Billed Separately"
+
+[0]: "AccountOwnerId
+[1]: Account Name
+[2]: ServiceAdministratorId
+[3]: SubscriptionId
+[4]: SubscriptionGuid
+[5]: Subscription Name
+[6]: Date
+[7]: Month
+[8]: Day
+[9]: Year
+[10]: Product
+[11]: Meter ID
+[12]: Meter Category
+[13]: Meter Sub-Category
+[14]: Meter Region
+[15]: Meter Name
+[16]: Consumed Quantity
+[17]: ResourceRate
+[18]: ExtendedCost
+[19]: Resource Location
+[20]: Consumed Service
+[21]: Instance ID
+[22]: ServiceInfo1
+[23]: ServiceInfo2
+[24]: AdditionalInfo
+[25]: Tags
+[26]: Store Service Identifier
+[27]: Department Name
+[28]: Cost Center
+[29]: Unit Of Measure
+[30]: Resource Group
+[31]: Charges Billed Separately"
+
+3: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","Bandwidth - Data Transfer Out - US Gov Zone 1","6c5c3140-e894-4ecf-aacc-60137b0bc93b","Bandwidth","","US Gov Zone 1","Data Transfer Out","0.02883","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-anarchist","","","{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}","","","Unassigned","","10 GB","EAG-TST","False"
+
+3: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","Bandwidth - Data Transfer Out - US Gov Zone 1","6c5c3140-e894-4ecf-aacc-60137b0bc93b","Bandwidth","","US Gov Zone 1","Data Transfer Out","0.02883","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-anarchist","","","{  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}","","","Unassigned","","10 GB","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/29/2019
+[7]: 4
+[8]: 29
+[9]: 2019
+[10]: Bandwidth - Data Transfer Out - US Gov Zone 1
+[11]: 6c5c3140-e894-4ecf-aacc-60137b0bc93b
+[12]: Bandwidth
+[13]: 
+[14]: US Gov Zone 1
+[15]: Data Transfer Out
+[16]: 0.02883
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-anarchist
+[22]: 
+[23]: 
+[24]: {  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 10 GB
+[30]: EAG-TST
+[31]: False"
+
+4: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Virtual Machines BS Series - B1s - US Gov","95343de6-803c-4ad5-83ad-fc6b14295968","Virtual Machines","BS Series","US Gov","B1s","24","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator","","Canonical","{  ""ImageType"": ""Canonical"",  ""ServiceType"": ""Standard_B1s"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 1,  ""UsageType"": ""ComputeHR""}","""ORG"": ""EAG"",""TYPE"": ""TST""","","Unassigned","","100 Hours","EAG-TST","False"
+
+4: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Virtual Machines BS Series - B1s - US Gov","95343de6-803c-4ad5-83ad-fc6b14295968","Virtual Machines","BS Series","US Gov","B1s","24","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator","","Canonical","{  ""ImageType"": ""Canonical""ZZ  ""ServiceType"": ""Standard_B1s"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 1,  ""UsageType"": ""ComputeHR""}","""ORG"": ""EAG""XX""TYPE"": ""TST""","","Unassigned","","100 Hours","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/28/2019
+[7]: 4
+[8]: 28
+[9]: 2019
+[10]: Virtual Machines BS Series - B1s - US Gov
+[11]: 95343de6-803c-4ad5-83ad-fc6b14295968
+[12]: Virtual Machines
+[13]: BS Series
+[14]: US Gov
+[15]: B1s
+[16]: 24
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator
+[22]: 
+[23]: Canonical
+[24]: {  ""ImageType"": ""Canonical""ZZ  ""ServiceType"": ""Standard_B1s"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 1,  ""UsageType"": ""ComputeHR""}
+[25]: ""ORG"": ""EAG""XX""TYPE"": ""TST""
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 Hours
+[30]: EAG-TST
+[31]: False"
+
+5: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Bandwidth - Data Transfer Out - US Gov Zone 1","6c5c3140-e894-4ecf-aacc-60137b0bc93b","Bandwidth","","US Gov Zone 1","Data Transfer Out","0.03468","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/TestVM","","","{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}","","","Unassigned","","10 GB","JONTEST","False"
+
+5: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Bandwidth - Data Transfer Out - US Gov Zone 1","6c5c3140-e894-4ecf-aacc-60137b0bc93b","Bandwidth","","US Gov Zone 1","Data Transfer Out","0.03468","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/TestVM","","","{  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}","","","Unassigned","","10 GB","JONTEST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/27/2019
+[7]: 4
+[8]: 27
+[9]: 2019
+[10]: Bandwidth - Data Transfer Out - US Gov Zone 1
+[11]: 6c5c3140-e894-4ecf-aacc-60137b0bc93b
+[12]: Bandwidth
+[13]: 
+[14]: US Gov Zone 1
+[15]: Data Transfer Out
+[16]: 0.03468
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/TestVM
+[22]: 
+[23]: 
+[24]: {  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 10 GB
+[30]: JONTEST
+[31]: False"
+
+6: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/26/2019","4","26","2019","Standard HDD Managed Disks - Disk Operations","82cd70ab-1aee-4b30-bc04-8b71e1204dbc","Storage","Standard HDD Managed Disks","","Disk Operations","18.5544","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-anarchist_OsDisk_1_502dbf047b3143b8a1168eb10f829312","","","","","","Unassigned","","100000000","EAG-TST","False"
+
+6: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/26/2019","4","26","2019","Standard HDD Managed Disks - Disk Operations","82cd70ab-1aee-4b30-bc04-8b71e1204dbc","Storage","Standard HDD Managed Disks","","Disk Operations","18.5544","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-anarchist_OsDisk_1_502dbf047b3143b8a1168eb10f829312","","","","","","Unassigned","","100000000","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/26/2019
+[7]: 4
+[8]: 26
+[9]: 2019
+[10]: Standard HDD Managed Disks - Disk Operations
+[11]: 82cd70ab-1aee-4b30-bc04-8b71e1204dbc
+[12]: Storage
+[13]: Standard HDD Managed Disks
+[14]: 
+[15]: Disk Operations
+[16]: 18.5544
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-anarchist_OsDisk_1_502dbf047b3143b8a1168eb10f829312
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100000000
+[30]: EAG-TST
+[31]: False"
+
+7: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","Tables - Batch Write Operations","b9e5e77c-a0b3-4a2c-9b8b-57fa54f31c52","Storage","Tables","","Batch Write Operations","0.0152","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100000000","EAG-TST","False"
+
+7: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","Tables - Batch Write Operations","b9e5e77c-a0b3-4a2c-9b8b-57fa54f31c52","Storage","Tables","","Batch Write Operations","0.0152","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100000000","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/29/2019
+[7]: 4
+[8]: 29
+[9]: 2019
+[10]: Tables - Batch Write Operations
+[11]: b9e5e77c-a0b3-4a2c-9b8b-57fa54f31c52
+[12]: Storage
+[13]: Tables
+[14]: 
+[15]: Batch Write Operations
+[16]: 0.0152
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Storage
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100000000
+[30]: EAG-TST
+[31]: False"
+
+8: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Tables - LRS Data Stored - US Gov","8db2ffdc-0086-4899-83ad-0a4d8fecdf6b","Storage","Tables","US Gov","LRS Data Stored","0.00001","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+8: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Tables - LRS Data Stored - US Gov","8db2ffdc-0086-4899-83ad-0a4d8fecdf6b","Storage","Tables","US Gov","LRS Data Stored","0.00001","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/27/2019
+[7]: 4
+[8]: 27
+[9]: 2019
+[10]: Tables - LRS Data Stored - US Gov
+[11]: 8db2ffdc-0086-4899-83ad-0a4d8fecdf6b
+[12]: Storage
+[13]: Tables
+[14]: US Gov
+[15]: LRS Data Stored
+[16]: 0.00001
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Storage
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 GB/Month
+[30]: EAG-TST
+[31]: False"
+
+9: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Virtual Machines BS Series - B2ms - US Gov","9f6775cd-f7e2-4d60-8935-ff2ffcb3636f","Virtual Machines","BS Series","US Gov","B2ms","24","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/TestVM","","Windows Server BYOL","{  ""ImageType"": ""Windows Server BYOL"",  ""ServiceType"": ""Standard_B2ms"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 2,  ""UsageType"": ""ComputeHR""}","","","Unassigned","","100 Hours","JONTEST","False"
+
+9: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Virtual Machines BS Series - B2ms - US Gov","9f6775cd-f7e2-4d60-8935-ff2ffcb3636f","Virtual Machines","BS Series","US Gov","B2ms","24","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/TestVM","","Windows Server BYOL","{  ""ImageType"": ""Windows Server BYOL""ZZ  ""ServiceType"": ""Standard_B2ms"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 2,  ""UsageType"": ""ComputeHR""}","","","Unassigned","","100 Hours","JONTEST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/27/2019
+[7]: 4
+[8]: 27
+[9]: 2019
+[10]: Virtual Machines BS Series - B2ms - US Gov
+[11]: 9f6775cd-f7e2-4d60-8935-ff2ffcb3636f
+[12]: Virtual Machines
+[13]: BS Series
+[14]: US Gov
+[15]: B2ms
+[16]: 24
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/TestVM
+[22]: 
+[23]: Windows Server BYOL
+[24]: {  ""ImageType"": ""Windows Server BYOL""ZZ  ""ServiceType"": ""Standard_B2ms"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 2,  ""UsageType"": ""ComputeHR""}
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 Hours
+[30]: JONTEST
+[31]: False"
+
+10: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Bandwidth - Data Transfer In - US Gov Zone 1","3a9d164b-d3c1-4350-9945-fa8056700299","Bandwidth","","US Gov Zone 1","Data Transfer In","0.015301","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-anarchist","","","{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}","","","Unassigned","","10 GB","EAG-TST","False"
+
+10: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Bandwidth - Data Transfer In - US Gov Zone 1","3a9d164b-d3c1-4350-9945-fa8056700299","Bandwidth","","US Gov Zone 1","Data Transfer In","0.015301","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-anarchist","","","{  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}","","","Unassigned","","10 GB","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/27/2019
+[7]: 4
+[8]: 27
+[9]: 2019
+[10]: Bandwidth - Data Transfer In - US Gov Zone 1
+[11]: 3a9d164b-d3c1-4350-9945-fa8056700299
+[12]: Bandwidth
+[13]: 
+[14]: US Gov Zone 1
+[15]: Data Transfer In
+[16]: 0.015301
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-anarchist
+[22]: 
+[23]: 
+[24]: {  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 10 GB
+[30]: EAG-TST
+[31]: False"
+
+11: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Bandwidth - Data Transfer In - US Gov Zone 1","3a9d164b-d3c1-4350-9945-fa8056700299","Bandwidth","","US Gov Zone 1","Data Transfer In","0.009464","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator","","","{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}","""ORG"": ""EAG"",""TYPE"": ""TST""","","Unassigned","","10 GB","EAG-TST","False"
+
+11: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Bandwidth - Data Transfer In - US Gov Zone 1","3a9d164b-d3c1-4350-9945-fa8056700299","Bandwidth","","US Gov Zone 1","Data Transfer In","0.009464","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator","","","{  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}","""ORG"": ""EAG""XX""TYPE"": ""TST""","","Unassigned","","10 GB","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/28/2019
+[7]: 4
+[8]: 28
+[9]: 2019
+[10]: Bandwidth - Data Transfer In - US Gov Zone 1
+[11]: 3a9d164b-d3c1-4350-9945-fa8056700299
+[12]: Bandwidth
+[13]: 
+[14]: US Gov Zone 1
+[15]: Data Transfer In
+[16]: 0.009464
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator
+[22]: 
+[23]: 
+[24]: {  ""ImageType"": nullZZ  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}
+[25]: ""ORG"": ""EAG""XX""TYPE"": ""TST""
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 10 GB
+[30]: EAG-TST
+[31]: False"
+
+12: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/26/2019","4","26","2019","IP Addresses - Basic - Dynamic Public IP","f114cb19-ea64-40b5-bcd7-aee474b62853","Virtual Network","IP Addresses","","Dynamic Public IP","23","0","0","usgovvirginia","Microsoft.Network","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Network/publicIPAddresses/EAG-TST-anarchist-ip","","","","","","Unassigned","","200 Hours","EAG-TST","False"
+
+12: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/26/2019","4","26","2019","IP Addresses - Basic - Dynamic Public IP","f114cb19-ea64-40b5-bcd7-aee474b62853","Virtual Network","IP Addresses","","Dynamic Public IP","23","0","0","usgovvirginia","Microsoft.Network","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Network/publicIPAddresses/EAG-TST-anarchist-ip","","","","","","Unassigned","","200 Hours","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/26/2019
+[7]: 4
+[8]: 26
+[9]: 2019
+[10]: IP Addresses - Basic - Dynamic Public IP
+[11]: f114cb19-ea64-40b5-bcd7-aee474b62853
+[12]: Virtual Network
+[13]: IP Addresses
+[14]: 
+[15]: Dynamic Public IP
+[16]: 23
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Network
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Network/publicIPAddresses/EAG-TST-anarchist-ip
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 200 Hours
+[30]: EAG-TST
+[31]: False"
+
+13: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","General Block Blob - Read Operations","40551b4c-e8be-48ed-b70b-f8d25c7de724","Storage","General Block Blob","","Read Operations","2.7237","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdiag645","","","","","","Unassigned","","100000000","EAG-TST","False"
+
+13: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","General Block Blob - Read Operations","40551b4c-e8be-48ed-b70b-f8d25c7de724","Storage","General Block Blob","","Read Operations","2.7237","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdiag645","","","","","","Unassigned","","100000000","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/27/2019
+[7]: 4
+[8]: 27
+[9]: 2019
+[10]: General Block Blob - Read Operations
+[11]: 40551b4c-e8be-48ed-b70b-f8d25c7de724
+[12]: Storage
+[13]: General Block Blob
+[14]: 
+[15]: Read Operations
+[16]: 2.7237
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Storage
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdiag645
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100000000
+[30]: EAG-TST
+[31]: False"
+
+14: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/30/2019","4","30","2019","Backup - Azure VM and on-premises Server - Protected Instances","6551548b-7e61-4f51-896e-eb907d256b95","Backup","","","Azure VM and on-premises Server Protected Instances","0.016128","0","0","usgovvirginia","Microsoft.RecoveryServices","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275","","","","","","Unassigned","","1 /Month","EAG-TST","False"
+
+14: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/30/2019","4","30","2019","Backup - Azure VM and on-premises Server - Protected Instances","6551548b-7e61-4f51-896e-eb907d256b95","Backup","","","Azure VM and on-premises Server Protected Instances","0.016128","0","0","usgovvirginia","Microsoft.RecoveryServices","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275","","","","","","Unassigned","","1 /Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/30/2019
+[7]: 4
+[8]: 30
+[9]: 2019
+[10]: Backup - Azure VM and on-premises Server - Protected Instances
+[11]: 6551548b-7e61-4f51-896e-eb907d256b95
+[12]: Backup
+[13]: 
+[14]: 
+[15]: Azure VM and on-premises Server Protected Instances
+[16]: 0.016128
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.RecoveryServices
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 1 /Month
+[30]: EAG-TST
+[31]: False"
+
+15: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","SQL Database Single Standard - S0 - DTUs - US Gov","3c99753a-9822-4d90-946f-37665caef03b","SQL Database","Single Standard","US Gov","S0 DTUs","1","0","0","usgovvirginia","Microsoft.Sql","/subscriptions/FD89DFF0-D96F-4BB5-A96B-E42D76C96492/resourceGroups/EAG-TST-SQL-RG/providers/Microsoft.Sql/servers/bigtst/databases/EAG-SQL-TST","","","","""ORG"": ""EAG"",""TYPE"": ""TST""","","Unassigned","","10 /Day","EAG-TST-SQL-RG","False"
+
+15: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","SQL Database Single Standard - S0 - DTUs - US Gov","3c99753a-9822-4d90-946f-37665caef03b","SQL Database","Single Standard","US Gov","S0 DTUs","1","0","0","usgovvirginia","Microsoft.Sql","/subscriptions/FD89DFF0-D96F-4BB5-A96B-E42D76C96492/resourceGroups/EAG-TST-SQL-RG/providers/Microsoft.Sql/servers/bigtst/databases/EAG-SQL-TST","","","","""ORG"": ""EAG""XX""TYPE"": ""TST""","","Unassigned","","10 /Day","EAG-TST-SQL-RG","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/29/2019
+[7]: 4
+[8]: 29
+[9]: 2019
+[10]: SQL Database Single Standard - S0 - DTUs - US Gov
+[11]: 3c99753a-9822-4d90-946f-37665caef03b
+[12]: SQL Database
+[13]: Single Standard
+[14]: US Gov
+[15]: S0 DTUs
+[16]: 1
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Sql
+[21]: /subscriptions/FD89DFF0-D96F-4BB5-A96B-E42D76C96492/resourceGroups/EAG-TST-SQL-RG/providers/Microsoft.Sql/servers/bigtst/databases/EAG-SQL-TST
+[22]: 
+[23]: 
+[24]: 
+[25]: ""ORG"": ""EAG""XX""TYPE"": ""TST""
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 10 /Day
+[30]: EAG-TST-SQL-RG
+[31]: False"
+
+16: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Virtual Machines BS Series - B1s - US Gov","95343de6-803c-4ad5-83ad-fc6b14295968","Virtual Machines","BS Series","US Gov","B1s","24","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator","","Canonical","{  ""ImageType"": ""Canonical"",  ""ServiceType"": ""Standard_B1s"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 1,  ""UsageType"": ""ComputeHR""}","""ORG"": ""EAG"",""TYPE"": ""TST""","","Unassigned","","100 Hours","EAG-TST","False"
+
+16: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Virtual Machines BS Series - B1s - US Gov","95343de6-803c-4ad5-83ad-fc6b14295968","Virtual Machines","BS Series","US Gov","B1s","24","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator","","Canonical","{  ""ImageType"": ""Canonical""ZZ  ""ServiceType"": ""Standard_B1s"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 1,  ""UsageType"": ""ComputeHR""}","""ORG"": ""EAG""XX""TYPE"": ""TST""","","Unassigned","","100 Hours","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/27/2019
+[7]: 4
+[8]: 27
+[9]: 2019
+[10]: Virtual Machines BS Series - B1s - US Gov
+[11]: 95343de6-803c-4ad5-83ad-fc6b14295968
+[12]: Virtual Machines
+[13]: BS Series
+[14]: US Gov
+[15]: B1s
+[16]: 24
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator
+[22]: 
+[23]: Canonical
+[24]: {  ""ImageType"": ""Canonical""ZZ  ""ServiceType"": ""Standard_B1s"",  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 1,  ""UsageType"": ""ComputeHR""}
+[25]: ""ORG"": ""EAG""XX""TYPE"": ""TST""
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 Hours
+[30]: EAG-TST
+[31]: False"
+
+17: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/30/2019","4","30","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.297408","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+17: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/30/2019","4","30","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.297408","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/30/2019
+[7]: 4
+[8]: 30
+[9]: 2019
+[10]: Standard Page Blob - LRS Data Stored - US Gov
+[11]: 91e2c179-68e0-4a0e-8e8d-480c5a50d617
+[12]: Storage
+[13]: Standard Page Blob
+[14]: US Gov
+[15]: LRS Data Stored
+[16]: 0.297408
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Storage
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 GB/Month
+[30]: EAG-TST
+[31]: False"
+
+18: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Backup - GRS Data Stored - US Gov","4598e7b6-8909-407d-aaa2-7ec6a2d846ab","Backup","","US Gov","GRS Data Stored","0.272168","0","0","usgovvirginia","Microsoft.RecoveryServices","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+18: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Backup - GRS Data Stored - US Gov","4598e7b6-8909-407d-aaa2-7ec6a2d846ab","Backup","","US Gov","GRS Data Stored","0.272168","0","0","usgovvirginia","Microsoft.RecoveryServices","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/28/2019
+[7]: 4
+[8]: 28
+[9]: 2019
+[10]: Backup - GRS Data Stored - US Gov
+[11]: 4598e7b6-8909-407d-aaa2-7ec6a2d846ab
+[12]: Backup
+[13]: 
+[14]: US Gov
+[15]: GRS Data Stored
+[16]: 0.272168
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.RecoveryServices
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 GB/Month
+[30]: EAG-TST
+[31]: False"
+
+19: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","IP Addresses - Basic - Dynamic Public IP","f114cb19-ea64-40b5-bcd7-aee474b62853","Virtual Network","IP Addresses","","Dynamic Public IP","22","0","0","usgovvirginia","Microsoft.Network","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Network/publicIPAddresses/EAG-TST-instigatorPublicIP","","","","""ORG"": ""EAG"",""TYPE"": ""TST""","","Unassigned","","200 Hours","EAG-TST","False"
+
+19: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","IP Addresses - Basic - Dynamic Public IP","f114cb19-ea64-40b5-bcd7-aee474b62853","Virtual Network","IP Addresses","","Dynamic Public IP","22","0","0","usgovvirginia","Microsoft.Network","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Network/publicIPAddresses/EAG-TST-instigatorPublicIP","","","","""ORG"": ""EAG""XX""TYPE"": ""TST""","","Unassigned","","200 Hours","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/29/2019
+[7]: 4
+[8]: 29
+[9]: 2019
+[10]: IP Addresses - Basic - Dynamic Public IP
+[11]: f114cb19-ea64-40b5-bcd7-aee474b62853
+[12]: Virtual Network
+[13]: IP Addresses
+[14]: 
+[15]: Dynamic Public IP
+[16]: 22
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Network
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Network/publicIPAddresses/EAG-TST-instigatorPublicIP
+[22]: 
+[23]: 
+[24]: 
+[25]: ""ORG"": ""EAG""XX""TYPE"": ""TST""
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 200 Hours
+[30]: EAG-TST
+[31]: False"
+
+20: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","Premium SSD Managed Disks - P4 - Disks - US Gov","6470bfe1-10cd-4371-afc8-5c1a5b697e3d","Storage","Premium SSD Managed Disks","US Gov","P4 Disks","0.033336","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-instigator_OsDisk_1_561a7d24a3944d8097c8a8016635886d","","","","""ORG"": ""EAG"",""TYPE"": ""TST""","","Unassigned","","1 /Month","EAG-TST","False"
+
+20: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/29/2019","4","29","2019","Premium SSD Managed Disks - P4 - Disks - US Gov","6470bfe1-10cd-4371-afc8-5c1a5b697e3d","Storage","Premium SSD Managed Disks","US Gov","P4 Disks","0.033336","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-instigator_OsDisk_1_561a7d24a3944d8097c8a8016635886d","","","","""ORG"": ""EAG""XX""TYPE"": ""TST""","","Unassigned","","1 /Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/29/2019
+[7]: 4
+[8]: 29
+[9]: 2019
+[10]: Premium SSD Managed Disks - P4 - Disks - US Gov
+[11]: 6470bfe1-10cd-4371-afc8-5c1a5b697e3d
+[12]: Storage
+[13]: Premium SSD Managed Disks
+[14]: US Gov
+[15]: P4 Disks
+[16]: 0.033336
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-instigator_OsDisk_1_561a7d24a3944d8097c8a8016635886d
+[22]: 
+[23]: 
+[24]: 
+[25]: ""ORG"": ""EAG""XX""TYPE"": ""TST""
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 1 /Month
+[30]: EAG-TST
+[31]: False"
+
+21: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Backup - Azure VM and on-premises Server - Protected Instances","6551548b-7e61-4f51-896e-eb907d256b95","Backup","","","Azure VM and on-premises Server Protected Instances","0.016128","0","0","usgovvirginia","Microsoft.RecoveryServices","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275","","","","","","Unassigned","","1 /Month","EAG-TST","False"
+
+21: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Backup - Azure VM and on-premises Server - Protected Instances","6551548b-7e61-4f51-896e-eb907d256b95","Backup","","","Azure VM and on-premises Server Protected Instances","0.016128","0","0","usgovvirginia","Microsoft.RecoveryServices","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275","","","","","","Unassigned","","1 /Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/28/2019
+[7]: 4
+[8]: 28
+[9]: 2019
+[10]: Backup - Azure VM and on-premises Server - Protected Instances
+[11]: 6551548b-7e61-4f51-896e-eb907d256b95
+[12]: Backup
+[13]: 
+[14]: 
+[15]: Azure VM and on-premises Server Protected Instances
+[16]: 0.016128
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.RecoveryServices
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 1 /Month
+[30]: EAG-TST
+[31]: False"
+
+22: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/26/2019","4","26","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.297408","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+22: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/26/2019","4","26","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.297408","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/26/2019
+[7]: 4
+[8]: 26
+[9]: 2019
+[10]: Standard Page Blob - LRS Data Stored - US Gov
+[11]: 91e2c179-68e0-4a0e-8e8d-480c5a50d617
+[12]: Storage
+[13]: Standard Page Blob
+[14]: US Gov
+[15]: LRS Data Stored
+[16]: 0.297408
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Storage
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 GB/Month
+[30]: EAG-TST
+[31]: False"
+
+23: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/30/2019","4","30","2019","Standard HDD Managed Disks - S4 - Disks - US Gov","b2e15e84-f748-448e-97c5-d90ff7f22d86","Storage","Standard HDD Managed Disks","US Gov","S4 Disks","0.033336","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-anarchist_OsDisk_1_502dbf047b3143b8a1168eb10f829312","","","","","","Unassigned","","1 /Month","EAG-TST","False"
+
+23: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/30/2019","4","30","2019","Standard HDD Managed Disks - S4 - Disks - US Gov","b2e15e84-f748-448e-97c5-d90ff7f22d86","Storage","Standard HDD Managed Disks","US Gov","S4 Disks","0.033336","0","0","usgovvirginia","Microsoft.Compute","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-anarchist_OsDisk_1_502dbf047b3143b8a1168eb10f829312","","","","","","Unassigned","","1 /Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/30/2019
+[7]: 4
+[8]: 30
+[9]: 2019
+[10]: Standard HDD Managed Disks - S4 - Disks - US Gov
+[11]: b2e15e84-f748-448e-97c5-d90ff7f22d86
+[12]: Storage
+[13]: Standard HDD Managed Disks
+[14]: US Gov
+[15]: S4 Disks
+[16]: 0.033336
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Compute
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-anarchist_OsDisk_1_502dbf047b3143b8a1168eb10f829312
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 1 /Month
+[30]: EAG-TST
+[31]: False"
+
+24: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.000004","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdiag645","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+24: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/28/2019","4","28","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.000004","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdiag645","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/28/2019
+[7]: 4
+[8]: 28
+[9]: 2019
+[10]: Standard Page Blob - LRS Data Stored - US Gov
+[11]: 91e2c179-68e0-4a0e-8e8d-480c5a50d617
+[12]: Storage
+[13]: Standard Page Blob
+[14]: US Gov
+[15]: LRS Data Stored
+[16]: 0.000004
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Storage
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdiag645
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 GB/Month
+[30]: EAG-TST
+[31]: False"
+
+25: $line: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.297408","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+25: $z: "pmphaigh@sovgov.onmicrosoft.com","PMPHAIGH","","0","fd89dff0-d96f-4bb5-a96b-e42d76c96492","EAG-TST","04/27/2019","4","27","2019","Standard Page Blob - LRS Data Stored - US Gov","91e2c179-68e0-4a0e-8e8d-480c5a50d617","Storage","Standard Page Blob","US Gov","LRS Data Stored","0.297408","0","0","usgovvirginia","Microsoft.Storage","/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730","","","","","","Unassigned","","100 GB/Month","EAG-TST","False"
+
+[0]: "pmphaigh@sovgov.onmicrosoft.com
+[1]: PMPHAIGH
+[2]: 
+[3]: 0
+[4]: fd89dff0-d96f-4bb5-a96b-e42d76c96492
+[5]: EAG-TST
+[6]: 04/27/2019
+[7]: 4
+[8]: 27
+[9]: 2019
+[10]: Standard Page Blob - LRS Data Stored - US Gov
+[11]: 91e2c179-68e0-4a0e-8e8d-480c5a50d617
+[12]: Storage
+[13]: Standard Page Blob
+[14]: US Gov
+[15]: LRS Data Stored
+[16]: 0.297408
+[17]: 0
+[18]: 0
+[19]: usgovvirginia
+[20]: Microsoft.Storage
+[21]: /subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdisks730
+[22]: 
+[23]: 
+[24]: 
+[25]: 
+[26]: 
+[27]: Unassigned
+[28]: 
+[29]: 100 GB/Month
+[30]: EAG-TST
+[31]: False"
+
