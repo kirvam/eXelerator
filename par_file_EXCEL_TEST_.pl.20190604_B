@@ -21,35 +21,20 @@ my @sheading = (
 );
 
 
-#my @sheading = (
-#               'Subscription Name',
-#               'Date',
-#               'Product',
-#               'Meter Category',
-#               'Meter Sub-Category',
-#               'Meter Name',
-#               'Consumed Quantity',
-#               'ReourceRate',
-#               'ExtendedCost',
-#               'Instance ID',
-#               'Tags',
-#               'Unit Of Measure' 
-#);
-
 my @sheading = (
-                    'SubscriptionName',
-                    'Date',
-                    'Product',
-                    'MeterCategory',
-                    'MeterSub-Category',
-                    'MeterName',
-                    'InstanceID',
-                    'Tags',
-                    'UnitOfMeasure',
-                    'ConsumedQuantity',
-                    'ResourceRate',
-                    'ExtendedCost'
-                );
+               'Subscription Name',
+               'Date',
+               'Product',
+               'Meter Category',
+               'Meter Sub-Category',
+               'Meter Name',
+               'Consumed Quantity',
+               'ReourceRate',
+               'ExtendedCost',
+               'Instance ID',
+               'Tags',
+               'Unit Of Measure' 
+);
 
 ###my ($file,$headings) = parse_file($file);
 ###make_array_and_count($headings);
@@ -155,7 +140,6 @@ my %HoAdata;
 my %map;
 my @header;
 my @nheader;
-my @fheader;
 open ( my $fh, "<", $file ) || die "Flaming death on open of $file: $!\n";
 while(<$fh>){
   $ii++;
@@ -175,8 +159,8 @@ while(<$fh>){
             my $key = $header[$kk];
             $key =~ s/\s*//g;
             print "HEADER KEY: $key\n";
-            $hline .= ",".$key;
-            push @nheader, $key;
+            $hline .= ",".$header[$kk];
+            push @nheader, $header[$kk];
             $map{$key} = $kk;
           };
              my $fnum = $#header + 1;
@@ -196,59 +180,29 @@ while(<$fh>){
                     my @line = split(/,/,$line);
                     my $fnum = $#line + 1;
                     my $ksub = $map{$key_sub};
-                    push @fheader, $ksub;
                      $ksub = $line[$ksub];
                     my $kdate = $map{$key_date};
-                    push @fheader, $kdate;
                      $kdate = $line[$kdate];
                     my $kprod = $map{$key_prod};
-                    push @fheader, $kprod;
                      $kprod = $line[$kprod];
                     my $kmetercat = $map{$key_metercat};
-                    push @fheader, $kmetercat;
                      $kmetercat = $line[$kmetercat];
                     my $kmetersub = $map{$key_metersub};                   
-                    push @fheader, $kmetersub;
                      $kmetersub = $line[$kmetersub];
                     my $kmname = $map{$key_mname};
-                    push @fheader, $kmname;
                      $kmname = $line[$kmname];
-                    ###
-                     my $kid = $map{$key_id};
-                     push @fheader, $kid;
-                     $kid = $line[$kid];
-                       my @junk = split(/\//,$kid);
-                       $kid = $junk[$#junk];
-                       print "\$kid: $kid\n";
-                     my $ktags = $map{$key_tags};
-                     push @fheader, $ktags;
-                     $ktags = $line[$ktags];
-                     my $kunit = $map{$key_unit};
-                     push @fheader, $kunit;
-                     $kunit = $line[$kunit];
-                    ###
                     my $kconsumed = $map{$key_consumed}; 
-                    push @fheader, $kconsumed;
                      $kconsumed = $line[$kconsumed];
                     my $kresrate = $map{$key_resrate};
-                    push @fheader, $kresrate;
                      $kresrate = $line[$kresrate];
                     my $kextend = $map{$key_extend};
-                    push @fheader, $kextend;
                      $kextend = $line[$kextend];
-                    ### my $kid = $map{$key_id};
-                    ### print "MAP: $map{$key_id}\n";
-                    ### print "MAP: $kid\n";
-                    ### $kid = $line[$kid];
-                    ###  print "\$kid: $kid\n";
-                    ###  my @junk = split(/\//,$kid);
-                    ###   $kid = $junk[$#junk];
-                    ###   print "\$kid: $kid\n";
-                    ### my $ktags = $map{$key_tags};
-                    ###  $ktags = $line[$ktags];
-                    ###    print "\$ktags: $ktags\n"; 
-                    ### my $kunit = $map{$key_unit};
-                    ###  $kunit = $line[$kunit];
+                    my $kid = $map{$key_id};
+                     $kid = $line[$kid];
+                    my $ktags = $map{$key_tags};
+                     $ktags = $line[$ktags];
+                    my $kunit = $map{$key_unit};
+                     $kunit = $line[$kunit];
                     #my $used = $map{$key_used};
                     # my $remain = $map{$key_remain};
                     #$remain = $line[$remain];
@@ -279,18 +233,12 @@ while(<$fh>){
                     $ksub =uc($ksub);
                     # $line = $line."
                     ## $line = $line.",".$ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.".".$kextend,",".$kunit.",".$kid.",".$ktags;
-                    #$line = $ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.",".$kextend.",".$kunit.",".$kid.",".$ktags;
-                    #$line = "$ksub,$kdate,$kprod,$kmetercat,$kmetersub,$kmname,$kconsumed,$kresrate,$kextend,$kid,$ktags,$kunit";
-                    $line = "$ksub,$kdate,$kprod,$kmetercat,$kmetersub,$kmname,$kid,$ktags,$kunit,$kconsumed,$kresrate,$kextend";
-
-                    print "LOOK AT WHOLE LINE AND FIELDS:\n";
-                    print "^$line^\n";
+                    $line = $ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.".".$kextend,",".$kunit.",".$kid.",".$ktags;
                     push @{ $HoA{$ksub} }, [ $line ];
                     #my $line = $val.",".$vname.",".$cpu.",".$mem.",".$prov.",".$used.",".$remain.",".$stor.",".$vmc.",".$pretty;
-                    #my $line = $ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.".".$kextend,",".$kunit.",".$kid.",".$ktags; 
+                    my $line = $ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.".".$kextend,",".$kunit.",".$kid.",".$ktags; 
                     #print  "^$val,$vname,$cpu,$mem,$prov,$used,$remain,$stor,$vmc,$pretty^\n";
                     print "^$line^\n";
-                    print "Print Array:\n";
                     my @array = split(/,/,$line);
                        foreach my $hh ( 0 .. $#line ){
                               print "[$hh]: $line[$hh]\n";
@@ -303,12 +251,6 @@ while(<$fh>){
            my $val = $item + 1;
            print "$nheader[$item] [$item + 1 = $val]\n";
    }
-  #print "\nREVISED HEADER ORDER\n";
-  #foreach my $item ( @fheader ){
-  #         my $val = $nheader[$item];
-  #         print "\$item: $item: $nheader[$item]\n";
-  # }
-   
   print "\nTotal lines: $ii.\n";
  return(\%HoA,\%HoAdata,\@nheader);
 };
@@ -539,8 +481,8 @@ foreach my $key ( sort ( keys %$ref ) ){
          ## col 17
           my $final_col = $start_col-1;
           ###
-          my $sum_end = "L".$final_row;
-          my $sum_start = "L".$start_row;
+          my $sum_end = "J".$final_row;
+          my $sum_start = "J".$start_row;
           ###
           my $vsum = "\=sum\($sum_start:$sum_end\)";
            print "\$sum: $sum\n";
@@ -569,7 +511,7 @@ foreach my $key ( sort ( keys %$ref ) ){
                #$new_trow--;
                  #my $sum_field = "=sum("."R".$new_row.":"."S".$new_row.")";  print $sum_field, "\n";
                  #my $sum_total_field = "=sum("."T".$total_tab_start.":"."T".$new_trow.")";  print $sum_total_field, "\n";
-                 my $sum_total_field = "=sum("."L".$total_tab_start.":"."L".$new_trow.")";  print $sum_total_field, "\n";
+                 my $sum_total_field = "=sum("."J".$total_tab_start.":"."J".$new_trow.")";  print $sum_total_field, "\n";
 
                  #$new_c++;
                  #$new_c = $new_c + 8;

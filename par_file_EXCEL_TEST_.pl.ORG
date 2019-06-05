@@ -20,53 +20,16 @@ my @sheading = (
                 'Total'
 );
 
-
-#my @sheading = (
-#               'Subscription Name',
-#               'Date',
-#               'Product',
-#               'Meter Category',
-#               'Meter Sub-Category',
-#               'Meter Name',
-#               'Consumed Quantity',
-#               'ReourceRate',
-#               'ExtendedCost',
-#               'Instance ID',
-#               'Tags',
-#               'Unit Of Measure' 
-#);
-
-my @sheading = (
-                    'SubscriptionName',
-                    'Date',
-                    'Product',
-                    'MeterCategory',
-                    'MeterSub-Category',
-                    'MeterName',
-                    'InstanceID',
-                    'Tags',
-                    'UnitOfMeasure',
-                    'ConsumedQuantity',
-                    'ResourceRate',
-                    'ExtendedCost'
-                );
-
 ###my ($file,$headings) = parse_file($file);
 ###make_array_and_count($headings);
 print "\n---< Start $0 >---\n";
 # GLOBAL MAP
-#my($map_href) = mk_data_map();
-my ($map_href);
+my($map_href) = mk_data_map();
 #
 # numCPU [3 + 1 = 4]
 # memoryMB [4 + 1 = 5]
 # Provisioned [5 + 1 = 6]
-#my($refHoA,$refHoAdata,$header_aref) = proc_file($file,'VM Name','Annot','numCPU','memoryMB','Provisioned','Used','Remaining');
-my($refHoA,$refHoAdata,$header_aref) = proc_file($file,'SubscriptionName','Date','Product','MeterCategory','MeterSub-Category','MeterName','ConsumedQuantity','ResourceRate','ExtendedCost','InstanceID','Tags','UnitOfMeasure');
-
-print "Dumper \$header_aref";
-print Dumper \$header_aref;
-
+my($refHoA,$refHoAdata,$header_aref) = proc_file($file,'VM Name','Annot','numCPU','memoryMB','Provisioned','Used','Remaining');
 my(@header) = mk_array($header_aref);
 print "Dumper \@header\n";
 print Dumper \@header;
@@ -99,7 +62,6 @@ foreach my $item ( @{ $aref } ){
  return(@header);
 };
 #
-
 sub conv_{
 my($value,$stype) = @_;
 my $gb;
@@ -129,7 +91,10 @@ $tb = sprintf("%.2f", $tb);
    return($gb,$tb);
 };
 
+###
+# sub calc_size {
 #
+#}
 sub gen_cost {
 my($mem,$cpu,$prov) = @_;
 # (1482.5+100*($mem - 1)*1.009^($mem - 1)+300*($cpu - 1)+($prov * 3.18))
@@ -144,187 +109,85 @@ return($cost,$pretty,$stor,$vmc);
 
 
 sub proc_file {
-# 'Subscription Name','Date','Product','Meter Category','Meter Sub-Category','Meter Name','Consumed Quantity','ResourceRate','ExtendedCost','Instance ID','Tags','Unit Of Measure'); 
-my($file,$key_sub,$key_date,$key_prod,$key_metercat,$key_metersub,$key_mname,$key_consumed,$key_resrate,$key_extend,$key_id,$key_tags,$key_unit) = @_;
-#my($file,$key_num,$key_note,$key_cpu,$key_mem,$key_prov,$key_used,$key_remain) = @_;
-#$key_num =~ s/\s//g;
-$key_sub =~ s/\s//g;
+my($file,$key_num,$key_note,$key_cpu,$key_mem,$key_prov,$key_used,$key_remain) = @_;
+$key_num =~ s/\s//g;
 my $ii;
 my %HoA;
 my %HoAdata;
 my %map;
 my @header;
-my @nheader;
-my @fheader;
 open ( my $fh, "<", $file ) || die "Flaming death on open of $file: $!\n";
 while(<$fh>){
   $ii++;
-  if( $ii eq 1 ) { print "$ii: FOUND 1: NEXT!\n"; next; }; 
-  if( $ii eq 2 ) { print "$ii: FOUND 2: NEXT!\n"; next; }; 
   my $line = $_;
   chomp($line);
-  print "\n\n$ii: FIRST LOOK: ^$line^\n";
-  #if( $ii lt 3 ){ print "NEXT\n";next ; };
-  #$line =~ s/\s*//g;
-  #print "^$line^\n";
-  if( $ii eq 3 ){
-    print "FOUND line 3 /Header.\n";
+  print "^$line^\n";
+  $line =~ s/\s*//g;
+  print "^$line^\n";
+  if( $ii eq 1 ){
     @header = split(/,/,$line);
-    my $hline;
     foreach my $kk ( 0 .. $#header ){
             my $key = $header[$kk];
             $key =~ s/\s*//g;
-            print "HEADER KEY: $key\n";
-            $hline .= ",".$key;
-            push @nheader, $key;
             $map{$key} = $kk;
           };
              my $fnum = $#header + 1;
              print "$ii,line has $fnum fields.\n";
-             push @{ $HoA{header} }, [ $hline ];
+             push @{ $HoA{header} }, [ $line ];
              #push @{ $HoAdata{header} }, [ $line ];
         } elsif ( $ii gt 1 && $_ =~ m/^#/ ) {
                 print "F4: FOUND OTHER Header.\n";
                 next;
-      #  } elsif ( $ii =~ /(1|2)/){
-      #         print "$ii: FOUND LINE 1 or 2\n";
-      #          next;
-         }  else {   
-                   print "DATA LINE\n";
-                   my $line = line_fixer($line);
-                    #my @line = split(/\"\,\"/,$line);
+        } else {
                     my @line = split(/,/,$line);
                     my $fnum = $#line + 1;
-                    my $ksub = $map{$key_sub};
-                    push @fheader, $ksub;
-                     $ksub = $line[$ksub];
-                    my $kdate = $map{$key_date};
-                    push @fheader, $kdate;
-                     $kdate = $line[$kdate];
-                    my $kprod = $map{$key_prod};
-                    push @fheader, $kprod;
-                     $kprod = $line[$kprod];
-                    my $kmetercat = $map{$key_metercat};
-                    push @fheader, $kmetercat;
-                     $kmetercat = $line[$kmetercat];
-                    my $kmetersub = $map{$key_metersub};                   
-                    push @fheader, $kmetersub;
-                     $kmetersub = $line[$kmetersub];
-                    my $kmname = $map{$key_mname};
-                    push @fheader, $kmname;
-                     $kmname = $line[$kmname];
-                    ###
-                     my $kid = $map{$key_id};
-                     push @fheader, $kid;
-                     $kid = $line[$kid];
-                       my @junk = split(/\//,$kid);
-                       $kid = $junk[$#junk];
-                       print "\$kid: $kid\n";
-                     my $ktags = $map{$key_tags};
-                     push @fheader, $ktags;
-                     $ktags = $line[$ktags];
-                     my $kunit = $map{$key_unit};
-                     push @fheader, $kunit;
-                     $kunit = $line[$kunit];
-                    ###
-                    my $kconsumed = $map{$key_consumed}; 
-                    push @fheader, $kconsumed;
-                     $kconsumed = $line[$kconsumed];
-                    my $kresrate = $map{$key_resrate};
-                    push @fheader, $kresrate;
-                     $kresrate = $line[$kresrate];
-                    my $kextend = $map{$key_extend};
-                    push @fheader, $kextend;
-                     $kextend = $line[$kextend];
-                    ### my $kid = $map{$key_id};
-                    ### print "MAP: $map{$key_id}\n";
-                    ### print "MAP: $kid\n";
-                    ### $kid = $line[$kid];
-                    ###  print "\$kid: $kid\n";
-                    ###  my @junk = split(/\//,$kid);
-                    ###   $kid = $junk[$#junk];
-                    ###   print "\$kid: $kid\n";
-                    ### my $ktags = $map{$key_tags};
-                    ###  $ktags = $line[$ktags];
-                    ###    print "\$ktags: $ktags\n"; 
-                    ### my $kunit = $map{$key_unit};
-                    ###  $kunit = $line[$kunit];
-                    #my $used = $map{$key_used};
-                    # my $remain = $map{$key_remain};
-                    #$remain = $line[$remain];
-                    #$used = $line[$used];
-                    #my $used_t;
-                    #($used,$used_t) = conv_($used,'B');
-                    #$cpu = $line[$cpu];
-                    #   print "CPU: $cpu\n";
-                    #my $mem = $map{$key_mem};
-                    #$mem = $line[$mem];
-                    #$mem = ( $mem /1024 );   # converts B to MB
-                    #   print "MEM: $mem\n";
-                    #my $prov = $map{$key_prov};
-                    #$prov = $line[$prov];
-                    #   print "PROV: $prov\n";
-                    #my $prov_t;
-                    #($prov,$prov_t) = conv_($prov,'B');
-                    #   print "PROV: $prov\nPROV_T: $prov_t\n";
-                    #   my($cost,$pretty,$stor,$vmc) = gen_cost($cpu,$mem,$prov);
-                    print "$ii,line has $fnum fields. \$ksub: $fnum\n";
-                    #my $vname = $line[$knum];
-                    #my $val = $line[$knum];
-                    #my $note = $line[$knote];
-                    #print "NOTE1: $note\n";
-                    #$note =~ s/\,//g;
-                    #print "NOTE2: $note\n";
-                    #my $val = find_name($val,$note);
-                    $ksub =uc($ksub);
-                    # $line = $line."
-                    ## $line = $line.",".$ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.".".$kextend,",".$kunit.",".$kid.",".$ktags;
-                    #$line = $ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.",".$kextend.",".$kunit.",".$kid.",".$ktags;
-                    #$line = "$ksub,$kdate,$kprod,$kmetercat,$kmetersub,$kmname,$kconsumed,$kresrate,$kextend,$kid,$ktags,$kunit";
-                    $line = "$ksub,$kdate,$kprod,$kmetercat,$kmetersub,$kmname,$kid,$ktags,$kunit,$kconsumed,$kresrate,$kextend";
-
-                    print "LOOK AT WHOLE LINE AND FIELDS:\n";
-                    print "^$line^\n";
-                    push @{ $HoA{$ksub} }, [ $line ];
-                    #my $line = $val.",".$vname.",".$cpu.",".$mem.",".$prov.",".$used.",".$remain.",".$stor.",".$vmc.",".$pretty;
-                    #my $line = $ksub.",".$kdate.",".$kprod.",".$kmetercat.",".$kmetersub.",".$kmname.",".$kconsumed.",".$kresrate.".".$kextend,",".$kunit.",".$kid.",".$ktags; 
-                    #print  "^$val,$vname,$cpu,$mem,$prov,$used,$remain,$stor,$vmc,$pretty^\n";
-                    print "^$line^\n";
-                    print "Print Array:\n";
+                    my $knum = $map{$key_num};
+                    my $knote = $map{$key_note};
+                    my $cpu = $map{$key_cpu};
+                    my $used = $map{$key_used};
+                    my $remain = $map{$key_remain};
+                    $remain = $line[$remain];
+                    $used = $line[$used];
+                    my $used_t;
+                    ($used,$used_t) = conv_($used,'B');
+                    $cpu = $line[$cpu];
+                       print "CPU: $cpu\n";
+                    my $mem = $map{$key_mem};
+                    $mem = $line[$mem];
+                    $mem = ( $mem /1024 );   # converts B to MB
+                       print "MEM: $mem\n";
+                    my $prov = $map{$key_prov};
+                    $prov = $line[$prov];
+                       print "PROV: $prov\n";
+                    my $prov_t;
+                    ($prov,$prov_t) = conv_($prov,'B');
+                       print "PROV: $prov\nPROV_T: $prov_t\n";
+                       my($cost,$pretty,$stor,$vmc) = gen_cost($cpu,$mem,$prov);
+                    print "$ii,line has $fnum fields. \$knum: $knum\n";
+                    my $vname = $line[$knum];
+                    my $val = $line[$knum];
+                    my $note = $line[$knote];
+                    print "NOTE1: $note\n";
+                    $note =~ s/\,//g;
+                    print "NOTE2: $note\n";
+                    my $val = find_name($val,$note);
+                    $val =uc($val);
+                    $line = $line.",".$cpu.",".$mem.",".$prov.",".$prov_t.",".$stor.",".$vmc.",".$pretty;
+                    push @{ $HoA{$val} }, [ $line ];
+                    my $line = $val.",".$vname.",".$cpu.",".$mem.",".$prov.",".$used.",".$remain.",".$stor.",".$vmc.",".$pretty;
+                    print  "^$val,$vname,$cpu,$mem,$prov,$used,$remain,$stor,$vmc,$pretty^\n";
                     my @array = split(/,/,$line);
-                       foreach my $hh ( 0 .. $#line ){
-                              print "[$hh]: $line[$hh]\n";
-                        };
-                      push @{ $HoAdata{$ksub} }, [ @array ];
+                      push @{ $HoAdata{$val} }, [ @array ];
   };
  };
- print "\nHeader 2nd:\n";
-  foreach my $item ( 0 .. $#nheader ){
+ print "\nHeader:\n";
+  foreach my $item ( 0 .. $#header ){
            my $val = $item + 1;
-           print "$nheader[$item] [$item + 1 = $val]\n";
+           print "$header[$item] [$item + 1 = $val]\n";
    }
-  #print "\nREVISED HEADER ORDER\n";
-  #foreach my $item ( @fheader ){
-  #         my $val = $nheader[$item];
-  #         print "\$item: $item: $nheader[$item]\n";
-  # }
-   
   print "\nTotal lines: $ii.\n";
- return(\%HoA,\%HoAdata,\@nheader);
+ return(\%HoA,\%HoAdata,\@header);
 };
-
-sub line_fixer {
-my($line) = @_;
-my $z = $line;
-        ##$z =~ s/("""[\.\w\d\s]*:[\.\w\d"\s]*),/$1XX/g;
-        $z =~ s/(\,  "")/YY/g;
-        $z =~ s/("""[\.\w\:\d"\s]*"),/$1XX/g;
-        #$z =~ s/("{  [\.\w\:\d"\s]*),/$1ZZ/g;
-        #print "\n$hh: \$z: $z\n\n";
-       #my @array = split(/\"\,\"/,$z);
-  chomp($line);
-return($z);
-}
 
 ###
 sub find_name {
@@ -441,6 +304,14 @@ $line =~ s/\s*//g;
 my @line = split(/,/,$line);
 my @array;
 print "\n";
+#for my $ii ( 0 .. $#headings ){
+#print "\$ii: $ii\n";
+#     if( ! $line[$ii] ){ #print "Found NO VAL.\n";
+#             $line[$ii] = "0";
+#                 }
+#                 ###
+#
+
  };
 };
 
@@ -473,7 +344,7 @@ my $worksheettotal = $workbook->add_worksheet( $totals );
 foreach my $key ( sort ( keys %$ref ) ){
   print "$key:\n";
   if($key =~ m/Owner/gi){ print "found Owner: $key.\n"; next; };
-  #if($key =~ m/eag/gi){ print "found Owner: $key.\n"; next; };
+  if($key =~ m/eag/gi){ print "found Owner: $key.\n"; next; };
   if($key =~ m/cs/gi){ print "found Owner: $key.\n"; next; };
   if($key =~ m/vshield/gi){ print "found Owner: $key.\n"; next; };
   if($key =~ m/name/gi){ print "found Owner: $key.\n"; next; };
@@ -520,8 +391,22 @@ foreach my $key ( sort ( keys %$ref ) ){
                     
                     print "\t$ii,$jj: $array[$jj]\n";
               }
-###
-###                  
+                 #my $new_c = $col; $new_c++;
+                 ##my $new_row = $row; $new_row++;
+                 #my $new_trow = $trow; $new_trow++;
+                 ###
+                 #my $sum_field = "\=ROUND(1482.5+100*((D$new_row/1024)-1)*1.009^((D$new_row/1024)-1)+300*(C$new_row-1)+(1.32+(G$new_row*3.18)),2)";
+                 #print $sum_field, "\n";
+                 ###my $sum_field = "=sum("."R".$new_row.":"."S".$new_row.")";  print $sum_field, "\n";
+                 #my $sum_total_field = "\=ROUND(1482.5+100*((D$new_row/1024)-1)*1.009^((D$new_row/1024)-1)+300*(C$new_row-1)+(1.32+(G$new_row*3.18)),2)";
+                 #print $sum_total_field, "\n";
+                 ###my $sum_total_field = "=sum("."R".$new_trow.":"."S".$new_trow.")";  print $sum_total_field, "\n";
+
+             
+                 #print "write sum cell: $row, $new_c, $sum_field \n";
+                 #  $worksheet->write( $row, $new_c, $sum_field, $format1 );
+                 #print "write totals sum cell: $trow, $new_c, $sum_total_field\n";
+                 #  $worksheettotal->write( $trow, $new_c, $sum_total_field, $format1 );
             $row++;
             $trow++;
        }
@@ -539,8 +424,8 @@ foreach my $key ( sort ( keys %$ref ) ){
          ## col 17
           my $final_col = $start_col-1;
           ###
-          my $sum_end = "L".$final_row;
-          my $sum_start = "L".$start_row;
+          my $sum_end = "J".$final_row;
+          my $sum_start = "J".$start_row;
           ###
           my $vsum = "\=sum\($sum_start:$sum_end\)";
            print "\$sum: $sum\n";
@@ -569,7 +454,7 @@ foreach my $key ( sort ( keys %$ref ) ){
                #$new_trow--;
                  #my $sum_field = "=sum("."R".$new_row.":"."S".$new_row.")";  print $sum_field, "\n";
                  #my $sum_total_field = "=sum("."T".$total_tab_start.":"."T".$new_trow.")";  print $sum_total_field, "\n";
-                 my $sum_total_field = "=sum("."L".$total_tab_start.":"."L".$new_trow.")";  print $sum_total_field, "\n";
+                 my $sum_total_field = "=sum("."J".$total_tab_start.":"."J".$new_trow.")";  print $sum_total_field, "\n";
 
                  #$new_c++;
                  #$new_c = $new_c + 8;

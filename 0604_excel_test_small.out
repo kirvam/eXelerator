@@ -1,0 +1,828 @@
+
+---< Start par_file_EXCEL_TEST_.pl >---
+1: FOUND 1: NEXT!
+2: FOUND 2: NEXT!
+
+
+3: FIRST LOOK: ^AccountOwnerId,Account Name,ServiceAdministratorId,SubscriptionId,SubscriptionGuid,Subscription Name,Date,Month,Day,Year,Product,Meter ID,Meter Category,Meter Sub-Category,Meter Region,Meter Name,Consumed Quantity,ResourceRate,ExtendedCost,Resource Location,Consumed Service,Instance ID,ServiceInfo1,ServiceInfo2,AdditionalInfo,Tags,Store Service Identifier,Department Name,Cost Center,Unit Of Measure,Resource Group,Charges Billed Separately^
+FOUND line 3 /Header.
+HEADER KEY: AccountOwnerId
+HEADER KEY: AccountName
+HEADER KEY: ServiceAdministratorId
+HEADER KEY: SubscriptionId
+HEADER KEY: SubscriptionGuid
+HEADER KEY: SubscriptionName
+HEADER KEY: Date
+HEADER KEY: Month
+HEADER KEY: Day
+HEADER KEY: Year
+HEADER KEY: Product
+HEADER KEY: MeterID
+HEADER KEY: MeterCategory
+HEADER KEY: MeterSub-Category
+HEADER KEY: MeterRegion
+HEADER KEY: MeterName
+HEADER KEY: ConsumedQuantity
+HEADER KEY: ResourceRate
+HEADER KEY: ExtendedCost
+HEADER KEY: ResourceLocation
+HEADER KEY: ConsumedService
+HEADER KEY: InstanceID
+HEADER KEY: ServiceInfo1
+HEADER KEY: ServiceInfo2
+HEADER KEY: AdditionalInfo
+HEADER KEY: Tags
+HEADER KEY: StoreServiceIdentifier
+HEADER KEY: DepartmentName
+HEADER KEY: CostCenter
+HEADER KEY: UnitOfMeasure
+HEADER KEY: ResourceGroup
+HEADER KEY: ChargesBilledSeparately
+3,line has 32 fields.
+
+
+4: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,aaefb515-69f9-4eb0-bfcf-c3a333cb86d7,Cloud-AOT-CVO,5/31/2019,5,31,2019,Standard HDD Managed Disks - S4 - Disks - US Gov,b2e15e84-f748-448e-97c5-d90ff7f22d86,Storage,Standard HDD Managed Disks,US Gov,S4 Disks,0.032256,1.670919439,0.053897177,usgovvirginia,Microsoft.Compute,/subscriptions/aaefb515-69f9-4eb0-bfcf-c3a333cb86d7/resourceGroups/AOT-CVO-DISKS/providers/Microsoft.Compute/disks/template-pfsense-01,,,,"""ORG"": ""EACS"",""TYPE"": ""TEMPLATE""",,Unassigned,,1 /Month,AOT-CVO-DISKS,FALSE^
+DATA LINE
+4,line has 32 fields. $ksub: 32
+^CLOUD-AOT-CVO,5/31/2019,Standard HDD Managed Disks - S4 - Disks - US Gov,Storage,Standard HDD Managed Disks,S4 Disks,0.032256,1.670919439.0.053897177^
+
+
+5: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,aaefb515-69f9-4eb0-bfcf-c3a333cb86d7,Cloud-AOT-CVO,5/31/2019,5,31,2019,Tiered Block Blob - All Other Operations - US Gov,18ba85bc-d265-44c4-a239-ec9f954000a2,Storage,Tiered Block Blob,US Gov,All Other Operations,3.0191,0.003943758,0.011906599,usgovvirginia,Microsoft.Storage,/subscriptions/aaefb515-69f9-4eb0-bfcf-c3a333cb86d7/resourceGroups/aot-cvo-disks/providers/Microsoft.Storage/storageAccounts/pfsensetemplates,,,,,,Unassigned,,1000000,aot-cvo-disks,FALSE^
+DATA LINE
+5,line has 32 fields. $ksub: 32
+^CLOUD-AOT-CVO,5/31/2019,Tiered Block Blob - All Other Operations - US Gov,Storage,Tiered Block Blob,All Other Operations,3.0191,0.003943758.0.011906599^
+
+
+6: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,aaefb515-69f9-4eb0-bfcf-c3a333cb86d7,Cloud-AOT-CVO,5/31/2019,5,31,2019,Bandwidth - Data Transfer In - US Gov Zone 1,3a9d164b-d3c1-4350-9945-fa8056700299,Bandwidth,,US Gov Zone 1,Data Transfer In,0.000506,0,0,usgovvirginia,Microsoft.Compute,/subscriptions/aaefb515-69f9-4eb0-bfcf-c3a333cb86d7/resourceGroups/AOT-CVO-TEMPLATES/providers/Microsoft.Compute/virtualMachines/template-pfsense-01,,,"{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}",,,Unassigned,,10 GB,AOT-CVO-TEMPLATES,FALSE^
+DATA LINE
+6,line has 32 fields. $ksub: 32
+^CLOUD-AOT-CVO,5/31/2019,Bandwidth - Data Transfer In - US Gov Zone 1,Bandwidth,,Data Transfer In,0.000506,0.0^
+
+
+7: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,IP Addresses - Basic - Dynamic Public IP,f114cb19-ea64-40b5-bcd7-aee474b62853,Virtual Network,IP Addresses,,Dynamic Public IP,24,0.003989445,0.095746674,usgovvirginia,Microsoft.Network,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JonTest/providers/Microsoft.Network/publicIPAddresses/TestVM-ip,,,,,,Unassigned,,200 Hours,JonTest,FALSE^
+DATA LINE
+7,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,IP Addresses - Basic - Dynamic Public IP,Virtual Network,IP Addresses,Dynamic Public IP,24,0.003989445.0.095746674^
+
+
+8: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,Bandwidth - Data Transfer In - US Gov Zone 1,3a9d164b-d3c1-4350-9945-fa8056700299,Bandwidth,,US Gov Zone 1,Data Transfer In,0.024354,0,0,usgovvirginia,Microsoft.Compute,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/virtualMachines/EAG-TST-instigator,,,"{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrIn""}","""ORG"": ""EAG"",""TYPE"": ""TST""",,Unassigned,,10 GB,EAG-TST,FALSE^
+DATA LINE
+8,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,Bandwidth - Data Transfer In - US Gov Zone 1,Bandwidth,,Data Transfer In,0.024354,0.0^
+
+
+9: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,aaefb515-69f9-4eb0-bfcf-c3a333cb86d7,Cloud-AOT-CVO,5/31/2019,5,31,2019,Bandwidth - Data Transfer Out - US Gov Zone 1,6c5c3140-e894-4ecf-aacc-60137b0bc93b,Bandwidth,,US Gov Zone 1,Data Transfer Out,0.001997,0.054972475,0.00010978,usgovvirginia,Microsoft.Compute,/subscriptions/aaefb515-69f9-4eb0-bfcf-c3a333cb86d7/resourceGroups/AOT-CVO-TEMPLATES/providers/Microsoft.Compute/virtualMachines/pfsenseconfiger,,,"{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}",,,Unassigned,,10 GB,AOT-CVO-TEMPLATES,FALSE^
+DATA LINE
+9,line has 32 fields. $ksub: 32
+^CLOUD-AOT-CVO,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.001997,0.054972475.0.00010978^
+
+
+10: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,aaefb515-69f9-4eb0-bfcf-c3a333cb86d7,Cloud-AOT-CVO,5/31/2019,5,31,2019,Tables - GRS - Batch Write Operations,bb20dfda-6d18-4bb1-b7fc-86a05d9cfb8d,Storage,Tables,,GRS Batch Write Operations,0.0284,0,0,usgovvirginia,Microsoft.Storage,/subscriptions/aaefb515-69f9-4eb0-bfcf-c3a333cb86d7/resourceGroups/aot-cvo-disks/providers/Microsoft.Storage/storageAccounts/pfsensetemplates,,,,,,Unassigned,,100000000,aot-cvo-disks,FALSE^
+DATA LINE
+10,line has 32 fields. $ksub: 32
+^CLOUD-AOT-CVO,5/31/2019,Tables - GRS - Batch Write Operations,Storage,Tables,GRS Batch Write Operations,0.0284,0.0^
+
+
+11: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,aaefb515-69f9-4eb0-bfcf-c3a333cb86d7,Cloud-AOT-CVO,5/31/2019,5,31,2019,Standard HDD Managed Disks - Disk Operations,82cd70ab-1aee-4b30-bc04-8b71e1204dbc,Storage,Standard HDD Managed Disks,,Disk Operations,7.8488,0.000495531,0.003889325,usgovvirginia,Microsoft.Compute,/subscriptions/aaefb515-69f9-4eb0-bfcf-c3a333cb86d7/resourceGroups/AOT-CVO-DISKS/providers/Microsoft.Compute/disks/template-pfsense-01,,,,"""ORG"": ""EACS"",""TYPE"": ""TEMPLATE""",,Unassigned,,100000000,AOT-CVO-DISKS,FALSE^
+DATA LINE
+11,line has 32 fields. $ksub: 32
+^CLOUD-AOT-CVO,5/31/2019,Standard HDD Managed Disks - Disk Operations,Storage,Standard HDD Managed Disks,Disk Operations,7.8488,0.000495531.0.003889325^
+
+
+12: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,Bandwidth - Data Transfer Out - US Gov Zone 1,6c5c3140-e894-4ecf-aacc-60137b0bc93b,Bandwidth,,US Gov Zone 1,Data Transfer Out,0.000024,0.054972475,1.31934E-06,usgovvirginia,Microsoft.Compute,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/CentOS-Jim,,,"{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}",,,Unassigned,,10 GB,JONTEST,FALSE^
+DATA LINE
+12,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.000024,0.054972475.1.31934E-06^
+
+
+13: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,Standard Page Blob - LRS Data Stored - US Gov,91e2c179-68e0-4a0e-8e8d-480c5a50d617,Storage,Standard Page Blob,US Gov,LRS Data Stored,0.000072,0.055889573,4.02405E-06,usgovvirginia,Microsoft.Storage,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Storage/storageAccounts/eagtstdiag645,,,,,,Unassigned,,100 GB/Month,EAG-TST,FALSE^
+DATA LINE
+13,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,Standard Page Blob - LRS Data Stored - US Gov,Storage,Standard Page Blob,LRS Data Stored,0.000072,0.055889573.4.02405E-06^
+
+
+14: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,Standard SSD Managed Disks - E4 - Disks - US Gov,621b38ed-4a70-41dd-ab95-7c09f412e6b9,Storage,Standard SSD Managed Disks,US Gov,E4 Disks,0.032256,2.628142705,0.084773371,usgovvirginia,Microsoft.Compute,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/disks/CentOS-Jim_OsDisk_1_22fa5e7ea2bf4512bb63bdedbd6ea55e,,,,,,Unassigned,,1 /Month,JONTEST,FALSE^
+DATA LINE
+14,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,Standard SSD Managed Disks - E4 - Disks - US Gov,Storage,Standard SSD Managed Disks,E4 Disks,0.032256,2.628142705.0.084773371^
+
+
+15: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,SQL Database Single Standard - S0 - DTUs - US Gov,3c99753a-9822-4d90-946f-37665caef03b,SQL Database,Single Standard,US Gov,S0 DTUs,1,0.608475,0.608475,usgovvirginia,Microsoft.Sql,/subscriptions/FD89DFF0-D96F-4BB5-A96B-E42D76C96492/resourceGroups/EAG-TST-SQL-RG/providers/Microsoft.Sql/servers/bigtst/databases/EAG-SQL-TST,,,,"""ORG"": ""EAG"",""TYPE"": ""TST""",,Unassigned,,10 /Day,EAG-TST-SQL-RG,FALSE^
+DATA LINE
+15,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,SQL Database Single Standard - S0 - DTUs - US Gov,SQL Database,Single Standard,S0 DTUs,1,0.608475.0.608475^
+
+
+16: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,Backup - Azure VM and on-premises Server - Protected Instances,6551548b-7e61-4f51-896e-eb907d256b95,Backup,,,Azure VM and on-premises Server Protected Instances,0.016128,9.955687164,0.160565323,usgovvirginia,Microsoft.RecoveryServices,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.RecoveryServices/vaults/eag-anarchist-vault275,,,,,,Unassigned,,1 /Month,EAG-TST,FALSE^
+DATA LINE
+16,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,Backup - Azure VM and on-premises Server - Protected Instances,Backup,,Azure VM and on-premises Server Protected Instances,0.016128,9.955687164.0.160565323^
+
+
+17: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,Standard HDD Managed Disks - LRS Snapshots - US Gov,d0804a30-87ae-44be-980c-29b014899076,Storage,Standard HDD Managed Disks,US Gov,LRS Snapshots,0.019757,0.089458674,0.001767435,usgovvirginia,Microsoft.Compute,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/EAG-TST/providers/Microsoft.Compute/disks/EAG-TST-anarchist_OsDisk_1_502dbf047b3143b8a1168eb10f829312,,,,,,Unassigned,,100 GB/Month,EAG-TST,FALSE^
+DATA LINE
+17,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,Standard HDD Managed Disks - LRS Snapshots - US Gov,Storage,Standard HDD Managed Disks,LRS Snapshots,0.019757,0.089458674.0.001767435^
+
+
+18: FIRST LOOK: ^pmphaigh@sovgov.onmicrosoft.com,PMPHAIGH,,0,fd89dff0-d96f-4bb5-a96b-e42d76c96492,EAG-TST,5/31/2019,5,31,2019,Bandwidth - Data Transfer Out - US Gov Zone 1,6c5c3140-e894-4ecf-aacc-60137b0bc93b,Bandwidth,,US Gov Zone 1,Data Transfer Out,0.026866,0.054972475,0.001476891,usgovvirginia,Microsoft.Compute,/subscriptions/fd89dff0-d96f-4bb5-a96b-e42d76c96492/resourceGroups/JONTEST/providers/Microsoft.Compute/virtualMachines/TestVM,,,"{  ""ImageType"": null,  ""ServiceType"": null,  ""VMName"": null,  ""VMProperties"": null,  ""VCPUs"": 0,  ""UsageType"": ""DataTrOut""}",,,Unassigned,,10 GB,JONTEST,FALSE^
+DATA LINE
+18,line has 32 fields. $ksub: 32
+^EAG-TST,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.026866,0.054972475.0.001476891^
+
+Header:
+AccountOwnerId [0 + 1 = 1]
+Account Name [1 + 1 = 2]
+ServiceAdministratorId [2 + 1 = 3]
+SubscriptionId [3 + 1 = 4]
+SubscriptionGuid [4 + 1 = 5]
+Subscription Name [5 + 1 = 6]
+Date [6 + 1 = 7]
+Month [7 + 1 = 8]
+Day [8 + 1 = 9]
+Year [9 + 1 = 10]
+Product [10 + 1 = 11]
+Meter ID [11 + 1 = 12]
+Meter Category [12 + 1 = 13]
+Meter Sub-Category [13 + 1 = 14]
+Meter Region [14 + 1 = 15]
+Meter Name [15 + 1 = 16]
+Consumed Quantity [16 + 1 = 17]
+ResourceRate [17 + 1 = 18]
+ExtendedCost [18 + 1 = 19]
+Resource Location [19 + 1 = 20]
+Consumed Service [20 + 1 = 21]
+Instance ID [21 + 1 = 22]
+ServiceInfo1 [22 + 1 = 23]
+ServiceInfo2 [23 + 1 = 24]
+AdditionalInfo [24 + 1 = 25]
+Tags [25 + 1 = 26]
+Store Service Identifier [26 + 1 = 27]
+Department Name [27 + 1 = 28]
+Cost Center [28 + 1 = 29]
+Unit Of Measure [29 + 1 = 30]
+Resource Group [30 + 1 = 31]
+Charges Billed Separately [31 + 1 = 32]
+
+Total lines: 18.
+Dumper @header
+$VAR1 = [
+          'AccountOwnerId',
+          'Account Name',
+          'ServiceAdministratorId',
+          'SubscriptionId',
+          'SubscriptionGuid',
+          'Subscription Name',
+          'Date',
+          'Month',
+          'Day',
+          'Year',
+          'Product',
+          'Meter ID',
+          'Meter Category',
+          'Meter Sub-Category',
+          'Meter Region',
+          'Meter Name',
+          'Consumed Quantity',
+          'ResourceRate',
+          'ExtendedCost',
+          'Resource Location',
+          'Consumed Service',
+          'Instance ID',
+          'ServiceInfo1',
+          'ServiceInfo2',
+          'AdditionalInfo',
+          'Tags',
+          'Store Service Identifier',
+          'Department Name',
+          'Cost Center',
+          'Unit Of Measure',
+          'Resource Group',
+          'Charges Billed Separately'
+        ];
+$VAR1 = \{
+            'CLOUD-AOT-CVO' => [
+                                 [
+                                   'CLOUD-AOT-CVO,5/31/2019,Standard HDD Managed Disks - S4 - Disks - US Gov,Storage,Standard HDD Managed Disks,S4 Disks,0.032256,1.670919439.0.053897177'
+                                 ],
+                                 [
+                                   'CLOUD-AOT-CVO,5/31/2019,Tiered Block Blob - All Other Operations - US Gov,Storage,Tiered Block Blob,All Other Operations,3.0191,0.003943758.0.011906599'
+                                 ],
+                                 [
+                                   'CLOUD-AOT-CVO,5/31/2019,Bandwidth - Data Transfer In - US Gov Zone 1,Bandwidth,,Data Transfer In,0.000506,0.0'
+                                 ],
+                                 [
+                                   'CLOUD-AOT-CVO,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.001997,0.054972475.0.00010978'
+                                 ],
+                                 [
+                                   'CLOUD-AOT-CVO,5/31/2019,Tables - GRS - Batch Write Operations,Storage,Tables,GRS Batch Write Operations,0.0284,0.0'
+                                 ],
+                                 [
+                                   'CLOUD-AOT-CVO,5/31/2019,Standard HDD Managed Disks - Disk Operations,Storage,Standard HDD Managed Disks,Disk Operations,7.8488,0.000495531.0.003889325'
+                                 ]
+                               ],
+            'EAG-TST' => [
+                           [
+                             'EAG-TST,5/31/2019,IP Addresses - Basic - Dynamic Public IP,Virtual Network,IP Addresses,Dynamic Public IP,24,0.003989445.0.095746674'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,Bandwidth - Data Transfer In - US Gov Zone 1,Bandwidth,,Data Transfer In,0.024354,0.0'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.000024,0.054972475.1.31934E-06'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,Standard Page Blob - LRS Data Stored - US Gov,Storage,Standard Page Blob,LRS Data Stored,0.000072,0.055889573.4.02405E-06'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,Standard SSD Managed Disks - E4 - Disks - US Gov,Storage,Standard SSD Managed Disks,E4 Disks,0.032256,2.628142705.0.084773371'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,SQL Database Single Standard - S0 - DTUs - US Gov,SQL Database,Single Standard,S0 DTUs,1,0.608475.0.608475'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,Backup - Azure VM and on-premises Server - Protected Instances,Backup,,Azure VM and on-premises Server Protected Instances,0.016128,9.955687164.0.160565323'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,Standard HDD Managed Disks - LRS Snapshots - US Gov,Storage,Standard HDD Managed Disks,LRS Snapshots,0.019757,0.089458674.0.001767435'
+                           ],
+                           [
+                             'EAG-TST,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.026866,0.054972475.0.001476891'
+                           ]
+                         ],
+            'header' => [
+                          [
+                            'AccountOwnerId,Account Name,ServiceAdministratorId,SubscriptionId,SubscriptionGuid,Subscription Name,Date,Month,Day,Year,Product,Meter ID,Meter Category,Meter Sub-Category,Meter Region,Meter Name,Consumed Quantity,ResourceRate,ExtendedCost,Resource Location,Consumed Service,Instance ID,ServiceInfo1,ServiceInfo2,AdditionalInfo,Tags,Store Service Identifier,Department Name,Cost Center,Unit Of Measure,Resource Group,Charges Billed Separately'
+                          ]
+                        ]
+          };
+
+
+---< Start print_hash_ref Sub >-----
+CLOUD-AOT-CVO:
+	0,0: CLOUD-AOT-CVO,5/31/2019,Standard HDD Managed Disks - S4 - Disks - US Gov,Storage,Standard HDD Managed Disks,S4 Disks,0.032256,1.670919439.0.053897177
+	1,0: CLOUD-AOT-CVO,5/31/2019,Tiered Block Blob - All Other Operations - US Gov,Storage,Tiered Block Blob,All Other Operations,3.0191,0.003943758.0.011906599
+	2,0: CLOUD-AOT-CVO,5/31/2019,Bandwidth - Data Transfer In - US Gov Zone 1,Bandwidth,,Data Transfer In,0.000506,0.0
+	3,0: CLOUD-AOT-CVO,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.001997,0.054972475.0.00010978
+	4,0: CLOUD-AOT-CVO,5/31/2019,Tables - GRS - Batch Write Operations,Storage,Tables,GRS Batch Write Operations,0.0284,0.0
+	5,0: CLOUD-AOT-CVO,5/31/2019,Standard HDD Managed Disks - Disk Operations,Storage,Standard HDD Managed Disks,Disk Operations,7.8488,0.000495531.0.003889325
+EAG-TST:
+	0,0: EAG-TST,5/31/2019,IP Addresses - Basic - Dynamic Public IP,Virtual Network,IP Addresses,Dynamic Public IP,24,0.003989445.0.095746674
+	1,0: EAG-TST,5/31/2019,Bandwidth - Data Transfer In - US Gov Zone 1,Bandwidth,,Data Transfer In,0.024354,0.0
+	2,0: EAG-TST,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.000024,0.054972475.1.31934E-06
+	3,0: EAG-TST,5/31/2019,Standard Page Blob - LRS Data Stored - US Gov,Storage,Standard Page Blob,LRS Data Stored,0.000072,0.055889573.4.02405E-06
+	4,0: EAG-TST,5/31/2019,Standard SSD Managed Disks - E4 - Disks - US Gov,Storage,Standard SSD Managed Disks,E4 Disks,0.032256,2.628142705.0.084773371
+	5,0: EAG-TST,5/31/2019,SQL Database Single Standard - S0 - DTUs - US Gov,SQL Database,Single Standard,S0 DTUs,1,0.608475.0.608475
+	6,0: EAG-TST,5/31/2019,Backup - Azure VM and on-premises Server - Protected Instances,Backup,,Azure VM and on-premises Server Protected Instances,0.016128,9.955687164.0.160565323
+	7,0: EAG-TST,5/31/2019,Standard HDD Managed Disks - LRS Snapshots - US Gov,Storage,Standard HDD Managed Disks,LRS Snapshots,0.019757,0.089458674.0.001767435
+	8,0: EAG-TST,5/31/2019,Bandwidth - Data Transfer Out - US Gov Zone 1,Bandwidth,,Data Transfer Out,0.026866,0.054972475.0.001476891
+header:
+	0,0: AccountOwnerId,Account Name,ServiceAdministratorId,SubscriptionId,SubscriptionGuid,Subscription Name,Date,Month,Day,Year,Product,Meter ID,Meter Category,Meter Sub-Category,Meter Region,Meter Name,Consumed Quantity,ResourceRate,ExtendedCost,Resource Location,Consumed Service,Instance ID,ServiceInfo1,ServiceInfo2,AdditionalInfo,Tags,Store Service Identifier,Department Name,Cost Center,Unit Of Measure,Resource Group,Charges Billed Separately
+---< End print_hash_ref Sub >-----
+
+
+---< Start print_hash_ref Sub >-----
+CLOUD-AOT-CVO:
+	0,0: CLOUD-AOT-CVO
+	0,1: 5/31/2019
+	0,2: Standard HDD Managed Disks - S4 - Disks - US Gov
+	0,3: Storage
+	0,4: Standard HDD Managed Disks
+	0,5: S4 Disks
+	0,6: 0.032256
+	0,7: 1.670919439.0.053897177
+	1,0: CLOUD-AOT-CVO
+	1,1: 5/31/2019
+	1,2: Tiered Block Blob - All Other Operations - US Gov
+	1,3: Storage
+	1,4: Tiered Block Blob
+	1,5: All Other Operations
+	1,6: 3.0191
+	1,7: 0.003943758.0.011906599
+	2,0: CLOUD-AOT-CVO
+	2,1: 5/31/2019
+	2,2: Bandwidth - Data Transfer In - US Gov Zone 1
+	2,3: Bandwidth
+	2,4: 
+	2,5: Data Transfer In
+	2,6: 0.000506
+	2,7: 0.0
+	3,0: CLOUD-AOT-CVO
+	3,1: 5/31/2019
+	3,2: Bandwidth - Data Transfer Out - US Gov Zone 1
+	3,3: Bandwidth
+	3,4: 
+	3,5: Data Transfer Out
+	3,6: 0.001997
+	3,7: 0.054972475.0.00010978
+	4,0: CLOUD-AOT-CVO
+	4,1: 5/31/2019
+	4,2: Tables - GRS - Batch Write Operations
+	4,3: Storage
+	4,4: Tables
+	4,5: GRS Batch Write Operations
+	4,6: 0.0284
+	4,7: 0.0
+	5,0: CLOUD-AOT-CVO
+	5,1: 5/31/2019
+	5,2: Standard HDD Managed Disks - Disk Operations
+	5,3: Storage
+	5,4: Standard HDD Managed Disks
+	5,5: Disk Operations
+	5,6: 7.8488
+	5,7: 0.000495531.0.003889325
+EAG-TST:
+	0,0: EAG-TST
+	0,1: 5/31/2019
+	0,2: IP Addresses - Basic - Dynamic Public IP
+	0,3: Virtual Network
+	0,4: IP Addresses
+	0,5: Dynamic Public IP
+	0,6: 24
+	0,7: 0.003989445.0.095746674
+	1,0: EAG-TST
+	1,1: 5/31/2019
+	1,2: Bandwidth - Data Transfer In - US Gov Zone 1
+	1,3: Bandwidth
+	1,4: 
+	1,5: Data Transfer In
+	1,6: 0.024354
+	1,7: 0.0
+	2,0: EAG-TST
+	2,1: 5/31/2019
+	2,2: Bandwidth - Data Transfer Out - US Gov Zone 1
+	2,3: Bandwidth
+	2,4: 
+	2,5: Data Transfer Out
+	2,6: 0.000024
+	2,7: 0.054972475.1.31934E-06
+	3,0: EAG-TST
+	3,1: 5/31/2019
+	3,2: Standard Page Blob - LRS Data Stored - US Gov
+	3,3: Storage
+	3,4: Standard Page Blob
+	3,5: LRS Data Stored
+	3,6: 0.000072
+	3,7: 0.055889573.4.02405E-06
+	4,0: EAG-TST
+	4,1: 5/31/2019
+	4,2: Standard SSD Managed Disks - E4 - Disks - US Gov
+	4,3: Storage
+	4,4: Standard SSD Managed Disks
+	4,5: E4 Disks
+	4,6: 0.032256
+	4,7: 2.628142705.0.084773371
+	5,0: EAG-TST
+	5,1: 5/31/2019
+	5,2: SQL Database Single Standard - S0 - DTUs - US Gov
+	5,3: SQL Database
+	5,4: Single Standard
+	5,5: S0 DTUs
+	5,6: 1
+	5,7: 0.608475.0.608475
+	6,0: EAG-TST
+	6,1: 5/31/2019
+	6,2: Backup - Azure VM and on-premises Server - Protected Instances
+	6,3: Backup
+	6,4: 
+	6,5: Azure VM and on-premises Server Protected Instances
+	6,6: 0.016128
+	6,7: 9.955687164.0.160565323
+	7,0: EAG-TST
+	7,1: 5/31/2019
+	7,2: Standard HDD Managed Disks - LRS Snapshots - US Gov
+	7,3: Storage
+	7,4: Standard HDD Managed Disks
+	7,5: LRS Snapshots
+	7,6: 0.019757
+	7,7: 0.089458674.0.001767435
+	8,0: EAG-TST
+	8,1: 5/31/2019
+	8,2: Bandwidth - Data Transfer Out - US Gov Zone 1
+	8,3: Bandwidth
+	8,4: 
+	8,5: Data Transfer Out
+	8,6: 0.026866
+	8,7: 0.054972475.0.001476891
+---< End print_hash_ref Sub >-----
+---< Start iterate_array >---
+write line: 2, 0, Subscription Name
+write line: 2, 1, Date
+write line: 2, 2, Product
+write line: 2, 3, Meter Category
+write line: 2, 4, Meter Sub-Category
+write line: 2, 5, Meter Name
+write line: 2, 6, Consumed Quantity
+write line: 2, 7, ReourceRate
+write line: 2, 8, ExtendedCost
+write line: 2, 9, Instance ID
+write line: 2, 10, Tags
+write line: 2, 11, Unit Of Measure
+CLOUD-AOT-CVO:
+write line: 0, 0, CLOUD-AOT-CVO
+write line: 2, 0, Subscription Name
+write line: 2, 1, Date
+write line: 2, 2, Product
+write line: 2, 3, Meter Category
+write line: 2, 4, Meter Sub-Category
+write line: 2, 5, Meter Name
+write line: 2, 6, Consumed Quantity
+write line: 2, 7, ReourceRate
+write line: 2, 8, ExtendedCost
+write line: 2, 9, Instance ID
+write line: 2, 10, Tags
+write line: 2, 11, Unit Of Measure
+$start_col: 11
+write line: 3, 0, CLOUD-AOT-CVO
+write totals line: 3, 0, CLOUD-AOT-CVO
+	0,0: CLOUD-AOT-CVO
+write line: 3, 1, 5/31/2019
+write totals line: 3, 1, 5/31/2019
+	0,1: 5/31/2019
+write line: 3, 2, Standard HDD Managed Disks - S4 - Disks - US Gov
+write totals line: 3, 2, Standard HDD Managed Disks - S4 - Disks - US Gov
+	0,2: Standard HDD Managed Disks - S4 - Disks - US Gov
+write line: 3, 3, Storage
+write totals line: 3, 3, Storage
+	0,3: Storage
+write line: 3, 4, Standard HDD Managed Disks
+write totals line: 3, 4, Standard HDD Managed Disks
+	0,4: Standard HDD Managed Disks
+write line: 3, 5, S4 Disks
+write totals line: 3, 5, S4 Disks
+	0,5: S4 Disks
+write line: 3, 6, 0.032256
+write totals line: 3, 6, 0.032256
+	0,6: 0.032256
+write line: 3, 7, 1.670919439.0.053897177
+write totals line: 3, 7, 1.670919439.0.053897177
+	0,7: 1.670919439.0.053897177
+write line: 4, 0, CLOUD-AOT-CVO
+write totals line: 4, 0, CLOUD-AOT-CVO
+	1,0: CLOUD-AOT-CVO
+write line: 4, 1, 5/31/2019
+write totals line: 4, 1, 5/31/2019
+	1,1: 5/31/2019
+write line: 4, 2, Tiered Block Blob - All Other Operations - US Gov
+write totals line: 4, 2, Tiered Block Blob - All Other Operations - US Gov
+	1,2: Tiered Block Blob - All Other Operations - US Gov
+write line: 4, 3, Storage
+write totals line: 4, 3, Storage
+	1,3: Storage
+write line: 4, 4, Tiered Block Blob
+write totals line: 4, 4, Tiered Block Blob
+	1,4: Tiered Block Blob
+write line: 4, 5, All Other Operations
+write totals line: 4, 5, All Other Operations
+	1,5: All Other Operations
+write line: 4, 6, 3.0191
+write totals line: 4, 6, 3.0191
+	1,6: 3.0191
+write line: 4, 7, 0.003943758.0.011906599
+write totals line: 4, 7, 0.003943758.0.011906599
+	1,7: 0.003943758.0.011906599
+write line: 5, 0, CLOUD-AOT-CVO
+write totals line: 5, 0, CLOUD-AOT-CVO
+	2,0: CLOUD-AOT-CVO
+write line: 5, 1, 5/31/2019
+write totals line: 5, 1, 5/31/2019
+	2,1: 5/31/2019
+write line: 5, 2, Bandwidth - Data Transfer In - US Gov Zone 1
+write totals line: 5, 2, Bandwidth - Data Transfer In - US Gov Zone 1
+	2,2: Bandwidth - Data Transfer In - US Gov Zone 1
+write line: 5, 3, Bandwidth
+write totals line: 5, 3, Bandwidth
+	2,3: Bandwidth
+write line: 5, 4, 
+write totals line: 5, 4, 
+	2,4: 
+write line: 5, 5, Data Transfer In
+write totals line: 5, 5, Data Transfer In
+	2,5: Data Transfer In
+write line: 5, 6, 0.000506
+write totals line: 5, 6, 0.000506
+	2,6: 0.000506
+write line: 5, 7, 0.0
+write totals line: 5, 7, 0.0
+	2,7: 0.0
+write line: 6, 0, CLOUD-AOT-CVO
+write totals line: 6, 0, CLOUD-AOT-CVO
+	3,0: CLOUD-AOT-CVO
+write line: 6, 1, 5/31/2019
+write totals line: 6, 1, 5/31/2019
+	3,1: 5/31/2019
+write line: 6, 2, Bandwidth - Data Transfer Out - US Gov Zone 1
+write totals line: 6, 2, Bandwidth - Data Transfer Out - US Gov Zone 1
+	3,2: Bandwidth - Data Transfer Out - US Gov Zone 1
+write line: 6, 3, Bandwidth
+write totals line: 6, 3, Bandwidth
+	3,3: Bandwidth
+write line: 6, 4, 
+write totals line: 6, 4, 
+	3,4: 
+write line: 6, 5, Data Transfer Out
+write totals line: 6, 5, Data Transfer Out
+	3,5: Data Transfer Out
+write line: 6, 6, 0.001997
+write totals line: 6, 6, 0.001997
+	3,6: 0.001997
+write line: 6, 7, 0.054972475.0.00010978
+write totals line: 6, 7, 0.054972475.0.00010978
+	3,7: 0.054972475.0.00010978
+write line: 7, 0, CLOUD-AOT-CVO
+write totals line: 7, 0, CLOUD-AOT-CVO
+	4,0: CLOUD-AOT-CVO
+write line: 7, 1, 5/31/2019
+write totals line: 7, 1, 5/31/2019
+	4,1: 5/31/2019
+write line: 7, 2, Tables - GRS - Batch Write Operations
+write totals line: 7, 2, Tables - GRS - Batch Write Operations
+	4,2: Tables - GRS - Batch Write Operations
+write line: 7, 3, Storage
+write totals line: 7, 3, Storage
+	4,3: Storage
+write line: 7, 4, Tables
+write totals line: 7, 4, Tables
+	4,4: Tables
+write line: 7, 5, GRS Batch Write Operations
+write totals line: 7, 5, GRS Batch Write Operations
+	4,5: GRS Batch Write Operations
+write line: 7, 6, 0.0284
+write totals line: 7, 6, 0.0284
+	4,6: 0.0284
+write line: 7, 7, 0.0
+write totals line: 7, 7, 0.0
+	4,7: 0.0
+write line: 8, 0, CLOUD-AOT-CVO
+write totals line: 8, 0, CLOUD-AOT-CVO
+	5,0: CLOUD-AOT-CVO
+write line: 8, 1, 5/31/2019
+write totals line: 8, 1, 5/31/2019
+	5,1: 5/31/2019
+write line: 8, 2, Standard HDD Managed Disks - Disk Operations
+write totals line: 8, 2, Standard HDD Managed Disks - Disk Operations
+	5,2: Standard HDD Managed Disks - Disk Operations
+write line: 8, 3, Storage
+write totals line: 8, 3, Storage
+	5,3: Storage
+write line: 8, 4, Standard HDD Managed Disks
+write totals line: 8, 4, Standard HDD Managed Disks
+	5,4: Standard HDD Managed Disks
+write line: 8, 5, Disk Operations
+write totals line: 8, 5, Disk Operations
+	5,5: Disk Operations
+write line: 8, 6, 7.8488
+write totals line: 8, 6, 7.8488
+	5,6: 7.8488
+write line: 8, 7, 0.000495531.0.003889325
+write totals line: 8, 7, 0.000495531.0.003889325
+	5,7: 0.000495531.0.003889325
+$sum_end: S9
+$sum: =sum(S4:S9)
+write line: 9, 11, =sum(S4:S9)
+$sum: =sum(S4:S9)
+write line: 9, 10, =sum(J4:J9)
+write line: 11, 10, 'Total'
+write line: 11, 11, =sum(J4:J9)
+EAG-TST:
+write line: 0, 0, EAG-TST
+write line: 2, 0, Subscription Name
+write line: 2, 1, Date
+write line: 2, 2, Product
+write line: 2, 3, Meter Category
+write line: 2, 4, Meter Sub-Category
+write line: 2, 5, Meter Name
+write line: 2, 6, Consumed Quantity
+write line: 2, 7, ReourceRate
+write line: 2, 8, ExtendedCost
+write line: 2, 9, Instance ID
+write line: 2, 10, Tags
+write line: 2, 11, Unit Of Measure
+$start_col: 11
+write line: 3, 0, EAG-TST
+write totals line: 9, 0, EAG-TST
+	0,0: EAG-TST
+write line: 3, 1, 5/31/2019
+write totals line: 9, 1, 5/31/2019
+	0,1: 5/31/2019
+write line: 3, 2, IP Addresses - Basic - Dynamic Public IP
+write totals line: 9, 2, IP Addresses - Basic - Dynamic Public IP
+	0,2: IP Addresses - Basic - Dynamic Public IP
+write line: 3, 3, Virtual Network
+write totals line: 9, 3, Virtual Network
+	0,3: Virtual Network
+write line: 3, 4, IP Addresses
+write totals line: 9, 4, IP Addresses
+	0,4: IP Addresses
+write line: 3, 5, Dynamic Public IP
+write totals line: 9, 5, Dynamic Public IP
+	0,5: Dynamic Public IP
+write line: 3, 6, 24
+write totals line: 9, 6, 24
+	0,6: 24
+write line: 3, 7, 0.003989445.0.095746674
+write totals line: 9, 7, 0.003989445.0.095746674
+	0,7: 0.003989445.0.095746674
+write line: 4, 0, EAG-TST
+write totals line: 10, 0, EAG-TST
+	1,0: EAG-TST
+write line: 4, 1, 5/31/2019
+write totals line: 10, 1, 5/31/2019
+	1,1: 5/31/2019
+write line: 4, 2, Bandwidth - Data Transfer In - US Gov Zone 1
+write totals line: 10, 2, Bandwidth - Data Transfer In - US Gov Zone 1
+	1,2: Bandwidth - Data Transfer In - US Gov Zone 1
+write line: 4, 3, Bandwidth
+write totals line: 10, 3, Bandwidth
+	1,3: Bandwidth
+write line: 4, 4, 
+write totals line: 10, 4, 
+	1,4: 
+write line: 4, 5, Data Transfer In
+write totals line: 10, 5, Data Transfer In
+	1,5: Data Transfer In
+write line: 4, 6, 0.024354
+write totals line: 10, 6, 0.024354
+	1,6: 0.024354
+write line: 4, 7, 0.0
+write totals line: 10, 7, 0.0
+	1,7: 0.0
+write line: 5, 0, EAG-TST
+write totals line: 11, 0, EAG-TST
+	2,0: EAG-TST
+write line: 5, 1, 5/31/2019
+write totals line: 11, 1, 5/31/2019
+	2,1: 5/31/2019
+write line: 5, 2, Bandwidth - Data Transfer Out - US Gov Zone 1
+write totals line: 11, 2, Bandwidth - Data Transfer Out - US Gov Zone 1
+	2,2: Bandwidth - Data Transfer Out - US Gov Zone 1
+write line: 5, 3, Bandwidth
+write totals line: 11, 3, Bandwidth
+	2,3: Bandwidth
+write line: 5, 4, 
+write totals line: 11, 4, 
+	2,4: 
+write line: 5, 5, Data Transfer Out
+write totals line: 11, 5, Data Transfer Out
+	2,5: Data Transfer Out
+write line: 5, 6, 0.000024
+write totals line: 11, 6, 0.000024
+	2,6: 0.000024
+write line: 5, 7, 0.054972475.1.31934E-06
+write totals line: 11, 7, 0.054972475.1.31934E-06
+	2,7: 0.054972475.1.31934E-06
+write line: 6, 0, EAG-TST
+write totals line: 12, 0, EAG-TST
+	3,0: EAG-TST
+write line: 6, 1, 5/31/2019
+write totals line: 12, 1, 5/31/2019
+	3,1: 5/31/2019
+write line: 6, 2, Standard Page Blob - LRS Data Stored - US Gov
+write totals line: 12, 2, Standard Page Blob - LRS Data Stored - US Gov
+	3,2: Standard Page Blob - LRS Data Stored - US Gov
+write line: 6, 3, Storage
+write totals line: 12, 3, Storage
+	3,3: Storage
+write line: 6, 4, Standard Page Blob
+write totals line: 12, 4, Standard Page Blob
+	3,4: Standard Page Blob
+write line: 6, 5, LRS Data Stored
+write totals line: 12, 5, LRS Data Stored
+	3,5: LRS Data Stored
+write line: 6, 6, 0.000072
+write totals line: 12, 6, 0.000072
+	3,6: 0.000072
+write line: 6, 7, 0.055889573.4.02405E-06
+write totals line: 12, 7, 0.055889573.4.02405E-06
+	3,7: 0.055889573.4.02405E-06
+write line: 7, 0, EAG-TST
+write totals line: 13, 0, EAG-TST
+	4,0: EAG-TST
+write line: 7, 1, 5/31/2019
+write totals line: 13, 1, 5/31/2019
+	4,1: 5/31/2019
+write line: 7, 2, Standard SSD Managed Disks - E4 - Disks - US Gov
+write totals line: 13, 2, Standard SSD Managed Disks - E4 - Disks - US Gov
+	4,2: Standard SSD Managed Disks - E4 - Disks - US Gov
+write line: 7, 3, Storage
+write totals line: 13, 3, Storage
+	4,3: Storage
+write line: 7, 4, Standard SSD Managed Disks
+write totals line: 13, 4, Standard SSD Managed Disks
+	4,4: Standard SSD Managed Disks
+write line: 7, 5, E4 Disks
+write totals line: 13, 5, E4 Disks
+	4,5: E4 Disks
+write line: 7, 6, 0.032256
+write totals line: 13, 6, 0.032256
+	4,6: 0.032256
+write line: 7, 7, 2.628142705.0.084773371
+write totals line: 13, 7, 2.628142705.0.084773371
+	4,7: 2.628142705.0.084773371
+write line: 8, 0, EAG-TST
+write totals line: 14, 0, EAG-TST
+	5,0: EAG-TST
+write line: 8, 1, 5/31/2019
+write totals line: 14, 1, 5/31/2019
+	5,1: 5/31/2019
+write line: 8, 2, SQL Database Single Standard - S0 - DTUs - US Gov
+write totals line: 14, 2, SQL Database Single Standard - S0 - DTUs - US Gov
+	5,2: SQL Database Single Standard - S0 - DTUs - US Gov
+write line: 8, 3, SQL Database
+write totals line: 14, 3, SQL Database
+	5,3: SQL Database
+write line: 8, 4, Single Standard
+write totals line: 14, 4, Single Standard
+	5,4: Single Standard
+write line: 8, 5, S0 DTUs
+write totals line: 14, 5, S0 DTUs
+	5,5: S0 DTUs
+write line: 8, 6, 1
+write totals line: 14, 6, 1
+	5,6: 1
+write line: 8, 7, 0.608475.0.608475
+write totals line: 14, 7, 0.608475.0.608475
+	5,7: 0.608475.0.608475
+write line: 9, 0, EAG-TST
+write totals line: 15, 0, EAG-TST
+	6,0: EAG-TST
+write line: 9, 1, 5/31/2019
+write totals line: 15, 1, 5/31/2019
+	6,1: 5/31/2019
+write line: 9, 2, Backup - Azure VM and on-premises Server - Protected Instances
+write totals line: 15, 2, Backup - Azure VM and on-premises Server - Protected Instances
+	6,2: Backup - Azure VM and on-premises Server - Protected Instances
+write line: 9, 3, Backup
+write totals line: 15, 3, Backup
+	6,3: Backup
+write line: 9, 4, 
+write totals line: 15, 4, 
+	6,4: 
+write line: 9, 5, Azure VM and on-premises Server Protected Instances
+write totals line: 15, 5, Azure VM and on-premises Server Protected Instances
+	6,5: Azure VM and on-premises Server Protected Instances
+write line: 9, 6, 0.016128
+write totals line: 15, 6, 0.016128
+	6,6: 0.016128
+write line: 9, 7, 9.955687164.0.160565323
+write totals line: 15, 7, 9.955687164.0.160565323
+	6,7: 9.955687164.0.160565323
+write line: 10, 0, EAG-TST
+write totals line: 16, 0, EAG-TST
+	7,0: EAG-TST
+write line: 10, 1, 5/31/2019
+write totals line: 16, 1, 5/31/2019
+	7,1: 5/31/2019
+write line: 10, 2, Standard HDD Managed Disks - LRS Snapshots - US Gov
+write totals line: 16, 2, Standard HDD Managed Disks - LRS Snapshots - US Gov
+	7,2: Standard HDD Managed Disks - LRS Snapshots - US Gov
+write line: 10, 3, Storage
+write totals line: 16, 3, Storage
+	7,3: Storage
+write line: 10, 4, Standard HDD Managed Disks
+write totals line: 16, 4, Standard HDD Managed Disks
+	7,4: Standard HDD Managed Disks
+write line: 10, 5, LRS Snapshots
+write totals line: 16, 5, LRS Snapshots
+	7,5: LRS Snapshots
+write line: 10, 6, 0.019757
+write totals line: 16, 6, 0.019757
+	7,6: 0.019757
+write line: 10, 7, 0.089458674.0.001767435
+write totals line: 16, 7, 0.089458674.0.001767435
+	7,7: 0.089458674.0.001767435
+write line: 11, 0, EAG-TST
+write totals line: 17, 0, EAG-TST
+	8,0: EAG-TST
+write line: 11, 1, 5/31/2019
+write totals line: 17, 1, 5/31/2019
+	8,1: 5/31/2019
+write line: 11, 2, Bandwidth - Data Transfer Out - US Gov Zone 1
+write totals line: 17, 2, Bandwidth - Data Transfer Out - US Gov Zone 1
+	8,2: Bandwidth - Data Transfer Out - US Gov Zone 1
+write line: 11, 3, Bandwidth
+write totals line: 17, 3, Bandwidth
+	8,3: Bandwidth
+write line: 11, 4, 
+write totals line: 17, 4, 
+	8,4: 
+write line: 11, 5, Data Transfer Out
+write totals line: 17, 5, Data Transfer Out
+	8,5: Data Transfer Out
+write line: 11, 6, 0.026866
+write totals line: 17, 6, 0.026866
+	8,6: 0.026866
+write line: 11, 7, 0.054972475.0.001476891
+write totals line: 17, 7, 0.054972475.0.001476891
+	8,7: 0.054972475.0.001476891
+$sum_end: S12
+$sum: =sum(S4:S12)
+write line: 12, 11, =sum(S4:S12)
+$sum: =sum(S4:S12)
+write line: 12, 10, =sum(J4:J12)
+write line: 14, 10, 'Total'
+write line: 14, 11, =sum(J4:J12)
+=sum(J4:J18)
+write final totals sum cell: 18, 7, =sum(J4:J18)
+---< End iterate_array >-----
+--< End >--

@@ -34,6 +34,7 @@ while(<$fh>){
                };
       $hh++;
       print "\n";
+      print "Array Count: $#array\n";
       ## alt_split($altline);
   };
 };
