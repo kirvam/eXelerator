@@ -6,19 +6,20 @@ my $file = shift;
 chomp($file);
 my $fname = shift;
 my %HoA;
+my $markup = '0.05';
 
-my @sheading = (
-                'Org',
-                'VmName',
-                'numCPU',
-                'memoryMB',
-                'Provisioned',
-                'Used',               
-                'Remaining%',
-                'StorageCost',
-                'VmCost',
-                'Total'
-);
+#my @sheading = (
+#                'Org',
+#                'VmName',
+#                'numCPU',
+#                'memoryMB',
+#                'Provisioned',
+#                'Used',               
+#                'Remaining%',
+#                'StorageCost',
+#                'VmCost',
+#                'Total'
+#);
 
 
 #my @sheading = (
@@ -35,7 +36,7 @@ my @sheading = (
 #               'Tags',
 #               'Unit Of Measure' 
 #);
-
+### @headings, You need to know the headings AND remove any (\s) spaces.
 my @sheading = (
                     'SubscriptionName',
                     'Date',
@@ -62,6 +63,7 @@ my ($map_href);
 # memoryMB [4 + 1 = 5]
 # Provisioned [5 + 1 = 6]
 #my($refHoA,$refHoAdata,$header_aref) = proc_file($file,'VM Name','Annot','numCPU','memoryMB','Provisioned','Used','Remaining');
+### You need to install headings as a 12 tags to create MAP HASH.  Yes this could be converted to an array in the future.
 my($refHoA,$refHoAdata,$header_aref) = proc_file($file,'SubscriptionName','Date','Product','MeterCategory','MeterSub-Category','MeterName','ConsumedQuantity','ResourceRate','ExtendedCost','InstanceID','Tags','UnitOfMeasure');
 
 print "Dumper \$header_aref";
@@ -533,34 +535,57 @@ foreach my $key ( sort ( keys %$ref ) ){
           print "\$sum_end: $sum_end\n";
           my $sum = "\=sum\($sum_start:$sum_end\)";
            print "\$sum: $sum\n";
-          print "write line: $row, $final_col, $sum\n";
-        #  $worksheet->write( $row, $col, $array[$jj], $format1 );
-  ###      $worksheet->write( $row, $col, $sum, $format1 );
-         ## col 17
-          my $final_col = $start_col-1;
+           print "write line: $row, $final_col, $sum\n";
+          #my $final_col = $start_col-1;
           ###
+          ###  Bbuilding total column for Azure Subtotal
           my $sum_end = "L".$final_row;
           my $sum_start = "L".$start_row;
           ###
           my $vsum = "\=sum\($sum_start:$sum_end\)";
-           print "\$sum: $sum\n";
-          my $vm_col = $final_col;
-          print "write line: $row, $vm_col, $vsum\n";
-  ###      $worksheet->write( $row, $vm_col, $vsum, $format1 );
+            print "\$sum: $sum\n";
+          #my $vm_col = $final_col;
+          #   print "write line: $row, $vm_col, $vsum\n";
           #
-          $sum=~s/\=//g;
-          #$vsum=~s/\=//g;  ### don't need for vxRack..  using sum of row K
-          my $tsum = "\=\($sum \+ $vsum\)";
-          my $t_col = $vm_col;
+          my $t_col = $start_col - 1;
           $row = $row+2;
-          print "write line: $row, $t_col, 'Total'\n";
-  ###      $worksheet->write( $row, $t_col, 'Total', $format1 );
-          my $t_col = $vm_col+1;
+          my $tab_subtotal = 'Azure Subtotal';
+          print "write line: $row, $t_col, $tab_subtotal\n";
+          $worksheet->write( $row, $t_col, $tab_subtotal, $formath );
+          
+          my $t_col = $t_col+1;
           print "write line: $row, $t_col, $vsum\n";
-        $worksheet->write( $row, $t_col, $vsum, $format1 );
-
+          $worksheet->write( $row, $t_col, $vsum, $format1 );
           $new_c = $col;
-          #
+
+          ###
+          $row++;
+          # Build Charge field.
+          my $stv_next_row = $final_row + 3;
+            print "\$stv_next_row: $stv_next_row\n";
+          my $sum_cs_fee_val = "=(L".$stv_next_row." * $markup)"; 
+            print "\$stv_cs_fee_val: $sum_cs_fee_val\n";       
+          # Build Charge Msg
+          my $back_one_col = $t_col - 1;
+          my $charge_msg = 'CS Service Charge';
+            print "write \$charge_msg: $row, $back_one_col, $charge_msg\n";
+          $worksheet->write(  $row, $back_one_col, $charge_msg, $formath);
+            print "write cs fee: $row, $t_col, $sum_cs_fee_val\n";
+          $worksheet->write( $row, $t_col, $sum_cs_fee_val );
+          ## 
+          # Build Grand Total
+          $row++;
+          my $stv_next_row_next = $stv_next_row + 1;
+          my $gtotal = "=( L".$stv_next_row." + "."L".$stv_next_row_next." )";
+            print "write \$gtotal: $gtotal\n";
+          my $gtotal_msg = 'Grand Total'; 
+            print "write \$gtotal_msg: $gtotal_msg\n";
+          $worksheet->write( $row, $back_one_col, $gtotal_msg, $formath);
+              print "write gtotal: $row, $t_col, $gtotal\n";
+          $worksheet->write( $row, $t_col, $gtotal);
+
+           
+          ###
       };
                  #my $new_c = $col; $new_c++;
                  #my $new_row = $row; $new_row++;
@@ -569,13 +594,33 @@ foreach my $key ( sort ( keys %$ref ) ){
                #$new_trow--;
                  #my $sum_field = "=sum("."R".$new_row.":"."S".$new_row.")";  print $sum_field, "\n";
                  #my $sum_total_field = "=sum("."T".$total_tab_start.":"."T".$new_trow.")";  print $sum_total_field, "\n";
+                 ###
                  my $sum_total_field = "=sum("."L".$total_tab_start.":"."L".$new_trow.")";  print $sum_total_field, "\n";
-
-                 #$new_c++;
-                 #$new_c = $new_c + 8;
+                 my $stv_next_row = $new_trow + 1;
+                  print "\$stv_next_row: $stv_next_row\n";
+                 my $sum_cs_fee_val = "=(L".$stv_next_row." * $markup)";
+                  print "\$sum_cs_fee_val: $sum_cs_fee_val\n";
+                 my $stv_next_row_next = $stv_next_row + 1;
+                 my $gtotal = "=( L".$stv_next_row." + "."L".$stv_next_row_next." )";
                  print "write final totals sum cell: $trow, $new_c, $sum_total_field\n";
-                 #$worksheettotal->write( $trow, $new_c, $sum_total_field, $format1 );
+                 my $subtotal = "Azure Subtotal";
+                 $worksheettotal->write( $trow, $new_c - 1, $subtotal, $formath );
                  $worksheettotal->write( $trow, $new_c, $sum_total_field );
+
+                 $trow++;
+                 my $back_one_col = $new_c - 1;
+                 my $charge_msg = 'CS Service Charge';
+                 print "write \$charge_msg: $trow, $back_one_col, $charge_msg\n";
+                 $worksheettotal->write(  $trow, $back_one_col, $charge_msg, $formath);
+                 print "write cs fee: $trow, $new_c, $sum_cs_fee_val\n";
+                 $worksheettotal->write( $trow, $new_c, $sum_cs_fee_val );
+                 $trow++;
+                 my $gtotal_msg = 'Grand Total';
+                 print "write \$gtotal_msg: $gtotal_msg\n";
+
+                 $worksheettotal->write( $trow, $back_one_col, $gtotal_msg, $formath);
+                 print "write gtotal: $trow, $new_c, $gtotal\n";
+                 $worksheettotal->write( $trow, $new_c, $gtotal);
 
     
 print "---< End iterate_array >-----\n";
